@@ -1,0 +1,760 @@
+* {
+  font-family: "Montserrat Regular";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav p {
+  display: none;
+}
+nav a {
+  margin: 0 20px;
+}
+
+.saliyab-logo {
+  width: 40%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Burger */
+.burger {
+  height: 10px;
+  width: 20px;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+}
+.patty {
+  position: relative;
+  top: 2px;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+}
+
+.landing {
+  background-image: url("../resources/bg-landing.webp");
+  background-size: cover;
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+
+.textHeader {
+  font-size: 50px;
+  letter-spacing: -3px;
+  padding-top: 180px;
+}
+.lightblue {
+  color: #00bad1;
+}
+.green {
+  color: #83c237;
+}
+.yellow {
+  color: #fdbd00;
+}
+.violet {
+  color: #5816a1;
+}
+.blue {
+  color: #3e82f7;
+}
+.orange {
+  color: #ff582d;
+}
+
+h6 {
+  font-weight: lighter;
+  font-size: 9px;
+  margin: 0 auto;
+  color: inherit;
+}
+.landing h6 {
+  width: 70%;
+}
+
+h2 {
+  font-family: "Montserrat";
+}
+
+button {
+  font-weight: lighter;
+  font-size: 9px;
+  padding: 7px 15px;
+  background: none;
+  color: inherit;
+  border-radius: 15px;
+  border: solid;
+  border-width: thin;
+}
+.sendMessage {
+  margin: 10px 0 300px 0;
+}
+
+.text-block {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.journey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #220051;
+  padding: 20px;
+  color: #ffffff;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+
+.journey img {
+  margin: 35px auto;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 230px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.journey-text-block {
+  color: #f2f2f2;
+}
+
+.journey-text-block p {
+  margin-top: 10px;
+  font-size: 10px;
+}
+ 
+.slant-buffer {
+  background-color: #f2f2f2;
+  position: relative;
+  height: 20vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slant-buffer:after {
+  background-color: #220051;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin:  top left;
+  transform: skewY(-10deg);
+  z-index: 1;
+}
+@media (min-width: 565px) {
+  .slant-buffer:after {
+    transform: skewY(-11.4deg);
+  }
+}
+
+.what-is-saliyab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #384558;
+  background-color: #f2f2f2;
+  background-image: url("../resources/Shape Elements/mobile-what-is-saliyab.webp");
+  background-size: 370px auto;
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-top: 40px;
+}
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-text img {
+  margin: 20px auto 35px auto;
+  width: 90%;
+  height: auto;
+  max-width: 220px;
+  object-fit: cover;
+  grid-area: s-i;
+}
+
+.what-is-saliyab p {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.saliyab-text-block {
+  grid-area: w-i-s-t;
+}
+
+.testimonials {
+  margin-top: 150px;
+  text-align: center;
+}
+img.v-3 {
+  position: relative;
+  bottom: 60px;
+  margin: -30px;
+  width: 50%;
+  max-width: 450px;
+  height: auto;
+}
+@media (min-width: 360px) {
+  img.v-3 {
+    bottom: 80px;
+  }
+}
+@media (min-width: 425px) {
+  img.v-3 {
+    bottom: 95px;
+  }
+}
+@media (min-width: 480px) {
+  img.v-3 {
+    bottom: 120px;
+  }
+}
+@media (min-width: 580px) {
+  img.v-3 {
+    bottom: 150px;
+  }
+}
+@media (min-width: 690px) {
+  img.v-3 {
+    bottom: 170px;
+  }
+}
+@media (min-width: 830px) {
+  img.v-3 {
+    bottom: 210px;
+  }
+}
+@media (min-width: 900px) {
+  img.v-3 {
+    margin: -50px;
+  }
+}
+
+.textimony {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 15px auto 0 auto;
+  padding: 100px 0;
+  border: solid;
+  border-width: thin;
+  border-radius: 15px;
+  gap: 20px;
+}
+.textimony p {
+  text-align: center;
+  font-size: 12px;
+  width: 61%;
+  font-weight: normal;
+}
+.textimony img {
+  flex-shrink: 2;
+  width: 18%;
+  max-width: 90px;
+  object-fit: contain;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #384558;
+  margin: 50px auto 0 auto;
+  padding: 0 30px;
+}
+.v-5 {
+  display: none;
+  width: 300px;
+  height: auto;
+  flex-grow: 10%;
+}
+.contact h6 {
+  color: #000000;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.lb-t {
+  color: #00e7f5;
+}
+.contact-form {
+  margin-top: 50px;
+}
+.contact-form h5 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.r-t {
+  color: #ff0000;
+}
+.faq-line {
+  width: 100%;
+  margin-top: 50px;
+  border-bottom: solid;
+  border-width: thin;
+}
+.line {
+  width: 100%;
+  margin-top: 30px;
+  border-bottom: solid;
+  border-width: thin;
+}
+.contact-buttons {
+  margin: 30px auto 60px auto;
+  text-align: center;
+  font-size: 12px;
+  word-spacing: px;
+}
+
+.faq {
+  background-image: url("../resources/Shape Elements/mobile-vector-BG-desaturated.webp");
+  background-repeat: no-repeat;
+  color: #384558;
+}
+.faq-content {
+  padding: 40px;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "header header"
+    "search image"
+    "dd dd"
+    "end end";
+}
+@media (min-width: 650px) {
+  .faq-content {
+    grid-template-areas:
+      "title title"
+      "header header"
+      "search image"
+      "dd image"
+      "end end";
+  }
+}
+.faq-search {
+  margin: 10px auto 50px auto;
+  margin-left: 0;
+}
+.faq-content h4 {
+  grid-area: title;
+}
+.faq-content h2 {
+  grid-area: header;
+}
+.faq-content h6 {
+  font-weight: bold;
+  margin: 0;
+}
+.faq-search {
+  grid-area: search;
+}
+.faq-search input {
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 15px;
+  border-width: thin;
+}
+
+.v-4-2 {
+  grid-area: image;
+  height: auto;
+  width: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+@media (min-width: 650px) {
+  .v-4-2 {
+    width: 350px;
+  }
+}
+
+.faq-dd {
+  grid-area: dd;
+}
+.faq-dd h6 {
+  margin-top: 15px;
+}
+.y-t {
+  color: rgb(255, 166, 0);
+}
+.faq-end {
+  grid-area: end;
+  margin: 40px auto;
+  margin-left: 0;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #220051;
+  background-image: url("../resources/Shape Elements/mobile-footer-bg.webp");
+  background-position: 50% -80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 40px;
+}
+  .address h3, .inquiries h3 {
+    margin-top: 30px;
+  }
+  .footer p {
+    font-size: 12px;
+    width: 85%;
+    margin: 0 auto;
+  }
+.spiel {
+  grid-area: spiel;
+}
+.spiel p {
+  margin-top: 10px;
+}
+.inquiries {
+  grid-area: inq;
+}
+
+.address {
+  grid-area: address;
+}
+.footer img {
+  width: 50%;
+  max-width: 196px;
+  height: auto;
+}
+
+td {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.links {
+  margin-top: 40px;
+  grid-area: links;
+}
+
+p.copyright {
+  grid-area: copyright;
+  margin-top: 40px;
+  width: 100%;
+}
+
+
+
+
+
+/*=======================
+  ==== MEDIA QUERIES ====
+  =======================*/
+
+/*----------------------------min-width:768px----------------------------*/
+@media (min-width: 768px) {
+  nav {
+    padding: 10px 80px;
+  }
+  nav p {
+    font-size: 15px;
+    display: inline;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .burger {
+    display: none;
+  }
+  .textHeader {
+    padding-top: 100px;
+  }
+  .lightblue,
+  .green,
+  .yellow,
+  .violet,
+  .blue,
+  .orange {
+    font-size: 60px;
+  }
+  .landing h6 {
+    width: 30%;
+    font-size: 10px;
+  }
+  .sendMessage {
+    margin-top: 10px;
+    font-size: 9px;
+    margin: 10px 0 200px 0;
+  }
+  .journey {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .journey-text-block {
+    width: 50%;
+  }
+  .journey p {
+    font-size: 20px;
+  }
+  .carousel-text {
+    display: grid;
+    grid-template-areas: "w-i-s-t s-i";
+  }
+  .saliyab-text-block p {
+    font-size: 20px;
+  }
+  .carousel-text img {
+    max-width: 600px;
+    height: 550px;
+    object-position: 100% 50%;
+  }
+  
+  .testimonials h2 {
+    font-size: 40px;
+  }
+  .textimony p {
+    font-size: 17px;
+    padding: 40px 0;
+  }
+  .contact {
+    flex-direction: row;
+  }
+  .contact h2 {
+    font-size: 32px;
+  }
+  .v-5 {
+    display: block;
+    width: 350px;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .faq-content h4 {
+    font-size: 25px;
+  }
+  .faq-content h2 {
+    font-size: 35px;
+  }
+  .faq-search h6 {
+    font-size: 15px;
+  }
+  .faq-search input {
+    font-size: 15px;
+  }
+  .faq h2 {
+    font-size: 32px;
+  }
+  .v-5 {
+    display: block;
+    width: 350px;
+  }
+  .footer {
+    background-image: url("../resources/Shape Elements/bg.webp");
+    background-position: 45%;
+    text-align: left;
+    display: grid;
+    grid-auto-columns: minmax(10px, auto);
+    padding: 40px 100px;
+    column-gap: 20px;
+    grid-template-areas:
+      "spiel inq"
+      "spiel address"
+      "copyright links";
+  }
+  .footer p {
+    margin: 0;
+    width: 75%;
+  }
+  .links p {
+    font-size: 10px;
+  }
+  .inquiries h3{
+    margin-top: 0;
+  }
+  .spiel p{
+    margin-top: 12px;
+  }
+  p.copyright {
+    margin-top: 100px;
+  }
+  .address {
+    margin-top: 80px;
+  }
+  .links p {
+    margin-top: 60px;
+  }
+}
+/*----------------------------/min-width:768px/----------------------------*/
+
+
+/*----------------------------min-width:900px----------------------------*/
+@media (min-width: 900px) {
+  .contact h2 {
+    font-size: 52px;
+  }
+  .contact h6 {
+    font-size: 16px;
+  }
+  .v-5 {
+    width: 500px;
+  }
+  .contact {
+    padding: 150px 0 100px 0;
+  }
+  .contact h2 {
+    font-size: 52px;
+  }
+  .contact h6 {
+    font-size: 16px;
+  }
+  .v-5 {
+    width: 500px;
+  }
+}
+/*----------------------------/min-width:900px/----------------------------*/
+
+
+/*----------------------------min-width:1024px----------------------------*/
+@media (min-width: 1024px) {
+  .textHeader {
+    padding-top: 150px;
+  }
+  .lightblue,
+  .green,
+  .yellow,
+  .violet,
+  .blue,
+  .orange {
+    font-size: 104px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .sendMessage {
+    font-size: 16px;
+    margin-bottom: 300px;
+  }
+  .journey {
+    padding: 20px 100px;
+  }
+  .carousel-text {
+    padding: 20px 100px 0 100px
+  }
+  .textimony p {
+    font-size: 1.5em;
+  }
+}
+/*----------------------------/min-width:1024px/----------------------------*/
+
+
+/*----------------------------min-width:1440px----------------------------*/
+@media (min-width: 1440px) {
+  .textHeader {
+    font-size: 104px;
+  }
+  .landing h6 {
+    width: 20%;
+    font-size: 16px;
+  }
+  .journey {
+    padding: 20px 250px;
+  }
+  .journey img {
+    margin-top: 50px;
+    max-width: 450px;
+    height: 600px;
+  }
+  .journey h2 {
+    font-size: 64px;
+  }
+  .journey p {
+    font-size: 20px;
+  }
+  .carousel-text {
+    padding: 20px 300px;
+  }
+  .carousel-text img {
+    max-width: 500px;
+  }
+  .what-is-saliyab h2 {
+    font-size: 64px;
+  }
+  .what-is-saliyab p {
+    font-size: 20px;
+  }
+  .saliyab-text-block {
+    width: 80%;
+  }
+  .contact-form h5 {
+    font-size: 18px;
+  }
+  .contact-buttons {
+    font-size: 1vw;
+  }
+  .contact-buttons button {
+    font-size: .8vw;
+    margin: 0 20px;
+  }
+  .faq-content h2 {
+    font-size: 40px;
+  }
+  .faq-search h6 {
+    font-size: 15px;
+  }
+  .faq-search input {
+    font-size: 15px;
+  }
+  .faq-content {
+    padding: 60px 400px;
+  }
+  .footer {
+    padding: 40px 350px;
+  }
+  .footer p {
+    width: 50%;
+  }
+  p.copyright {
+    margin-top: 75px;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  .links {
+    margin-top: 20px;
+  }
+}
+/*----------------------------/min-width:1440px/----------------------------*/
+
+
+/*----------------------------min-width:2000px----------------------------*/
+@media (min-width: 2000px) {
+  .journey {
+    padding: 20px 350px;
+  }
+  .textimony p {
+    font-size: 2em;
+  }
+}
+/*----------------------------/min-width:2000px/----------------------------*/
