@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -86,7 +86,7 @@ h6 {
 }
 
 h2 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
