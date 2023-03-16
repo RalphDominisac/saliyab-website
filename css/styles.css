@@ -227,6 +227,7 @@ button {
   width: 61%;
   font-weight: normal;
 }
+.textimony img {
   cursor: pointer;
   width: 100%;
   max-width: 90px;
