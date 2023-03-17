@@ -197,6 +197,9 @@ button {
   margin-top: 10px;
   font-size: 10px;
 }
+.what-is-saliyab h2 {
+  font-weight: bold;
+}
 .saliyab-text-block {
   grid-area: w-i-s-t;
 }
@@ -205,6 +208,32 @@ button {
   margin-top: 150px;
   text-align: center;
 }
+
+.textimony {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 15px auto 0 auto;
+  padding: 100px 0;
+  border: solid;
+  border-width: thin;
+  border-radius: 15px;
+  gap: 20px;
+}
+.textimony q {
+  text-align: center;
+  font-size: 12px;
+  width: 61%;
+  font-weight: normal;
+}
+.textimony img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 90px;
+  object-fit: contain;
+}
+
 img.v-3 {
   position: relative;
   bottom: 60px;
@@ -235,7 +264,7 @@ img.v-3 {
 }
 @media (min-width: 690px) {
   img.v-3 {
-    bottom: 170px;
+    bottom: 180px;
   }
 }
 @media (min-width: 830px) {
@@ -247,31 +276,6 @@ img.v-3 {
   img.v-3 {
     margin: -50px;
   }
-}
-
-.textimony {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 15px auto 0 auto;
-  padding: 100px 0;
-  border: solid;
-  border-width: thin;
-  border-radius: 15px;
-  gap: 20px;
-}
-.textimony p {
-  text-align: center;
-  font-size: 12px;
-  width: 61%;
-  font-weight: normal;
-}
-.textimony img {
-  flex-shrink: 2;
-  width: 18%;
-  max-width: 90px;
-  object-fit: contain;
 }
 
 .contact {
@@ -534,7 +538,7 @@ p.copyright {
   .testimonials h2 {
     font-size: 40px;
   }
-  .textimony p {
+  .textimony q {
     font-size: 17px;
     padding: 40px 0;
   }
@@ -662,7 +666,7 @@ p.copyright {
   .carousel-text {
     padding: 20px 100px 0 100px
   }
-  .textimony p {
+  .textimony q {
     font-size: 1.5em;
   }
 }
@@ -700,6 +704,7 @@ p.copyright {
   }
   .what-is-saliyab h2 {
     font-size: 64px;
+    font-weight: bold;
   }
   .what-is-saliyab p {
     font-size: 20px;
@@ -756,7 +761,7 @@ p.copyright {
   .journey {
     padding: 20px 350px;
   }
-  .textimony p {
+  .textimony q {
     font-size: 2em;
   }
 }
