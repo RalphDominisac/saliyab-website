@@ -48,7 +48,7 @@ nav a {
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
-  color: #ffffff;
+  color: #F2F2F2;
 }
 
 .textHeader {
@@ -116,7 +116,7 @@ button {
   justify-content: center;
   background-color: #220051;
   padding: 20px;
-  color: #ffffff;
+  color: #F2F2F2;
   z-index: 2;
   padding-bottom: 50px;
 }
@@ -126,7 +126,7 @@ button {
   border-radius: 5px;
   width: 90%;
   max-width: 230px;
-  height: 330px;
+  height: 330px;  
   object-fit: cover;
 }
 
@@ -185,12 +185,10 @@ button {
   align-items: center;
 }
 .carousel-text img {
-  margin: 20px auto 35px auto;
-  width: 90%;
+  margin: 0 auto 35px auto;
   height: auto;
-  max-width: 220px;
+  width: 300px;
   object-fit: cover;
-  grid-area: s-i;
 }
 
 .what-is-saliyab p {
@@ -199,9 +197,6 @@ button {
 }
 .what-is-saliyab h2 {
   font-weight: bold;
-}
-.saliyab-text-block {
-  grid-area: w-i-s-t;
 }
 
 .testimonials {
@@ -217,7 +212,8 @@ button {
   margin: 15px auto 0 auto;
   padding: 100px 0;
   border: solid;
-  border-width: thin;
+  border-width: medium;
+  box-shadow: 0 5px 8px rgb(197, 197, 197);
   border-radius: 15px;
   gap: 20px;
 }
@@ -263,6 +259,9 @@ img.v-3 {
   }
 }
 @media (min-width: 690px) {
+  .journey {
+    gap: 50px;
+  }
   img.v-3 {
     bottom: 180px;
   }
@@ -289,13 +288,11 @@ img.v-3 {
 }
 .v-5 {
   display: none;
-  width: 300px;
-  height: auto;
-  flex-grow: 10%;
+  object-fit: cover;
+  object-position: right;
 }
 .contact h6 {
   color: #000000;
-  font-weight: bold;
   margin-left: 0;
 }
 
@@ -313,15 +310,17 @@ img.v-3 {
 .r-t {
   color: #ff0000;
 }
-.faq-line {
+.line {
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 20px;
   border-bottom: solid;
   border-width: thin;
 }
-.line {
+.faq-line {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 15px;
   border-bottom: solid;
   border-width: thin;
 }
@@ -330,6 +329,10 @@ img.v-3 {
   text-align: center;
   font-size: 12px;
   word-spacing: px;
+}
+.contact-buttons button{
+  margin: 0 10px 0 10px;
+  font-size: 13px;
 }
 
 .faq {
@@ -367,8 +370,12 @@ img.v-3 {
 .faq-content h2 {
   grid-area: header;
 }
-.faq-content h6 {
-  font-weight: bold;
+.faq-content p {
+  font-size: 16px;
+  margin: 0;
+}
+.faq-content h5 {
+  font-size: 16px;
   margin: 0;
 }
 .faq-search {
@@ -412,7 +419,7 @@ img.v-3 {
 }
 
 .footer {
-  color: #ffffff;
+  color: #F2F2F2;
   background-color: #220051;
   background-image: url("../resources/Shape Elements/mobile-footer-bg.webp");
   background-position: 50% -80px;
@@ -515,6 +522,12 @@ p.copyright {
     flex-direction: row;
     align-items: center;
     padding: 20px 30px;
+    gap: 50px;
+  }
+  .journey img {
+    margin: 35px 0 35px auto;
+    max-width: 300px;
+    height: 400px;
   }
   .journey-text-block {
     width: 50%;
@@ -522,21 +535,32 @@ p.copyright {
   .journey p {
     font-size: 20px;
   }
+  .what-is-saliyab {
+    padding: 20px 30px;
+  }
   .carousel-text {
-    display: grid;
-    grid-template-areas: "w-i-s-t s-i";
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
   }
   .saliyab-text-block p {
+    order: 1;
     font-size: 20px;
   }
   .carousel-text img {
-    max-width: 600px;
-    height: 550px;
+    order: 2;
+    width: 600px;
+    height: 350px;
+    margin: 35px 0 35px 0;
     object-position: 100% 50%;
   }
   
   .testimonials h2 {
     font-size: 40px;
+  }
+  .textimony {
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .textimony q {
     font-size: 17px;
@@ -549,8 +573,12 @@ p.copyright {
     font-size: 32px;
   }
   .v-5 {
+    position: relative;
+    bottom: 50px;
     display: block;
-    width: 350px;
+    height: 600px;
+    width: 300px;
+    flex-shrink: 5;
   }
   .contact-form {
     width: 90%;
@@ -569,10 +597,6 @@ p.copyright {
   }
   .faq h2 {
     font-size: 32px;
-  }
-  .v-5 {
-    display: block;
-    width: 350px;
   }
   .footer {
     background-image: url("../resources/Shape Elements/bg.webp");
@@ -622,7 +646,7 @@ p.copyright {
     font-size: 16px;
   }
   .v-5 {
-    width: 500px;
+    width: 350px;
   }
   .contact {
     padding: 150px 0 100px 0;
@@ -634,7 +658,14 @@ p.copyright {
     font-size: 16px;
   }
   .v-5 {
-    width: 500px;
+    height: 700px;
+    width: 350px;
+  }
+  .faq-content h2 {
+    font-size: 52px;
+  }
+  .faq-content h5 {
+    font-size: 16px;
   }
 }
 /*----------------------------/min-width:900px/----------------------------*/
@@ -664,7 +695,11 @@ p.copyright {
     padding: 20px 100px;
   }
   .carousel-text {
-    padding: 20px 100px 0 100px
+    padding: 20px 30px;
+  }
+  .textimony {
+    margin-left: auto;
+    margin-right: auto;
   }
   .textimony q {
     font-size: 1.5em;
@@ -683,7 +718,8 @@ p.copyright {
     font-size: 16px;
   }
   .journey {
-    padding: 20px 250px;
+    padding: 20px 100px;
+    gap: 50px;
   }
   .journey img {
     margin-top: 50px;
@@ -694,23 +730,28 @@ p.copyright {
     font-size: 64px;
   }
   .journey p {
-    font-size: 20px;
+    font-size: 24px;
   }
   .carousel-text {
-    padding: 20px 300px;
+    gap: 50px;
   }
   .carousel-text img {
-    max-width: 500px;
+    width: 450px;
+    height: 450px;
+    margin-right: auto;
   }
-  .what-is-saliyab h2 {
+  .what-is-saliyab h2 { 
     font-size: 64px;
     font-weight: bold;
   }
   .what-is-saliyab p {
-    font-size: 20px;
+    font-size: 24px;
   }
   .saliyab-text-block {
-    width: 80%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 45px;
+    width: 50%;
   }
   .contact-form h5 {
     font-size: 18px;
@@ -721,9 +762,6 @@ p.copyright {
   .contact-buttons button {
     font-size: .8vw;
     margin: 0 20px;
-  }
-  .faq-content h2 {
-    font-size: 40px;
   }
   .faq-search h6 {
     font-size: 15px;
@@ -753,16 +791,21 @@ p.copyright {
 /*----------------------------/min-width:1440px/----------------------------*/
 
 
-/*----------------------------min-width:2000px----------------------------*/
-@media (min-width: 2000px) {
+/*----------------------------min-width:1800px----------------------------*/
+@media (min-width: 1800px) {
   .landing h6 {
     width: 30%;
   }
   .journey {
-    padding: 20px 350px;
+    padding: 20px 150px;
+    gap: 50px;
+  }
+  .what-is-saliyab {
+    padding: 20px 150px;
+    gap: 50px;
   }
   .textimony q {
     font-size: 2em;
   }
 }
-/*----------------------------/min-width:2000px/----------------------------*/
+/*----------------------------/min-width:1800px/----------------------------*/
