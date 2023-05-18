@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -1222,3 +1223,52 @@ p.copyright {
   }
 }
 /*-------------end---------------/min-width:1800px/----------------------------*/
+
+/* Accordion CSS */
+#page_container {
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#accordion_search_bar_container {
+  position: relative;
+}
+#accordion_search_bar_container:after {
+  content: "\e003";
+  font-family: Glyphicons Halflings;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#accordion_search_bar_container #accordion_search_bar {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+  outline: 0;
+}
+
+.panel-title a {
+  display: block;
+}
+
+.panel-heading {
+  background: #f4f4f4;
+}
+
+/* Contact form CSS */
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}

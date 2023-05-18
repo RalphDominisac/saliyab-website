@@ -15,11 +15,13 @@ import bShape from "../resources/Shape Elements/b.webp";
 import gShape from "../resources/Shape Elements/g.webp";
 import y2Shape from "../resources/Shape Elements/y2.webp";
 import vShape from "../resources/Shape Elements/v.webp";
-import mugnaLogo from "../resources/Logo/mugnaLogo.webp";
+import mugnaLogo from "../resources/Logo/mugna_logo.webp";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Accordion from "../components/accordion";
+import ContactFormSpree from "../components/contactForm";
 import "./globals.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -139,118 +141,7 @@ export default function Home() {
               <b>hello@mugna.tech</b>
             </span>
           </h5>
-          <div className="contact-form">
-            <TextField
-              required
-              className="contact_input"
-              id="standard-required"
-              label="Name"
-              defaultValue=" "
-              variant="standard"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
-            />
-            <br />
-            <br />
-            <TextField
-              required
-              className="contact_input"
-              id="standard-required"
-              label="Email Address"
-              defaultValue=" "
-              variant="standard"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
-            />
-            <br />
-            <br />
-            <TextField
-              required
-              className="contact_input"
-              id="standard-required"
-              label="Contact Number"
-              defaultValue=" "
-              variant="standard"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
-            />
-            <br />
-            <br />
-            <TextField
-              required
-              className="contact_input"
-              id="standard-required"
-              label="Your Message"
-              defaultValue=" "
-              variant="standard"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
-            />
-
-            <div className="contact-buttons">
-              <Button
-                variant="outlined"
-                sx={{
-                  margin: "10px 0 300px 0",
-                  color: "black",
-                  borderRadius: "15px",
-                  borderColor: "black",
-                  ":hover": {
-                    bgcolor: "rgba(25, 25, 25, 0.5)", // theme.palette.primary.main
-                    color: "black",
-                    borderColor: "black",
-                  },
-                }}
-              >
-                Send Message
-              </Button>
-              or
-              <Button
-                variant="outlined"
-                sx={{
-                  margin: "10px 0 300px 0",
-                  color: "black",
-                  borderRadius: "15px",
-                  borderColor: "black",
-                  ":hover": {
-                    bgcolor: "rgba(25, 25, 25, 0.5)", // theme.palette.primary.main
-                    color: "black",
-                    borderColor: "black",
-                  },
-                }}
-              >
-                Schedule a Call
-              </Button>
-            </div>
-          </div>
+          <ContactFormSpree />
         </div>
       </div>
       <div className="faq" id="faqsection">
@@ -264,7 +155,7 @@ export default function Home() {
           </h2>
           <div className="faq-search">
             <p>Have questions? We&apos;re here to help.</p>
-            <input type="text" placeholder="Search" />
+
             <Accordion />
           </div>
           <Image
@@ -275,24 +166,6 @@ export default function Home() {
             alt="pic"
           />
 
-          <div className="faq-dd">
-            <h5>
-              <b>Who can attend Saliyab workshops?</b>
-            </h5>
-            <div className="faq-line"></div>
-            <h5>
-              <b>What topics are covered in Saliyab workshops?</b>
-            </h5>
-            <div className="faq-line"></div>
-            <h5>
-              <b>How can I register for a Saliyab workshop?</b>
-            </h5>
-            <div className="faq-line"></div>
-            <h5>
-              <b>How can I stay informed about upcoming Saliyab workshops?</b>
-            </h5>
-            <div className="faq-line"></div>
-          </div>
           <div className="faq-end">
             <h4>
               <b>Still have questions?</b>
@@ -390,9 +263,29 @@ export default function Home() {
 
         <div className="links">
           <p>
-            <a>&mdash;Facebook&emsp;</a>
-            <a>&mdash;Instagram</a>
-            <a>&emsp;&mdash;LinkedIn</a>
+            <Link
+              href="https://www.facebook.com/mugna.tech"
+              style={{ textDecoration: "none", color: "white" }}
+              target="_blank"
+            >
+              &mdash;Facebook&emsp;
+            </Link>
+
+            <Link
+              href="https://www.instagram.com/mugna.tech/?hl=en"
+              style={{ textDecoration: "none", color: "white" }}
+              target="_blank"
+            >
+              &mdash;Instagram
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/company/mugna-tech"
+              style={{ textDecoration: "none", color: "white" }}
+              target="_blank"
+            >
+              &emsp;&mdash;LinkedIn
+            </Link>
           </p>
         </div>
 
