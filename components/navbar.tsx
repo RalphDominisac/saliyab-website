@@ -154,31 +154,3 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 }
-
-// "use-client";
-// import Image from "next/image";
-// import saliyab_logo from "../resources/Logo/saliyab_logo.webp";
-
-// const navbar = () => {
-//   return (
-//     <div>
-//       <nav>
-//         <Image
-//           classNameName="saliyab-logo"
-//           src={saliyab_logo}
-//           width="891"
-//           height="274"
-//           alt="saliyab logoo"
-//         />
-//         <p>
-//           <a>FAQ</a> <a>Contact Us</a>
-//         </p>
-//         <div classNameName="burger">
-//           <div classNameName="patty"></div>
-//         </div>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default navbar;

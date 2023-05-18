@@ -1,24 +1,21 @@
 "use client";
 import Image from "next/image";
 import Head from "next/head";
-// import styles from "./page.module.css";
-// import scripts  from './scripts';
 import Script from "next/script";
-// import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
-import our_journey from "../resources/Carousel Images/Untitled1.webp";
-import what_is_saliyab from "../resources/Carousel Images/Saliyab.webp";
-import testimonies_vector from "../resources/Illustrations/vector3.webp";
-import want_to_experience from "../resources/Illustrations/vector5.webp";
-import faq_vector from "../resources/Illustrations/vector4.2.webp";
-import o_shape from "../resources/Shape Elements/o.webp";
-import y_shape from "../resources/Shape Elements/y.webp";
-import b_shape from "../resources/Shape Elements/b.webp";
-import g_shape from "../resources/Shape Elements/g.webp";
-import y2_shape from "../resources/Shape Elements/y2.webp";
-import v_shape from "../resources/Shape Elements/v.webp";
-import mugna_logo from "../resources/Logo/mugna_logo.webp";
+import ourJourney from "../resources/Carousel Images/Untitled1.webp";
+import whatIsSaliyab from "../resources/Carousel Images/Saliyab.webp";
+import testimoniesVector from "../resources/Illustrations/vector3.webp";
+import wantToExperience from "../resources/Illustrations/vector5.webp";
+import faqVector from "../resources/Illustrations/vector4.2.webp";
+import oShape from "../resources/Shape Elements/o.webp";
+import yShape from "../resources/Shape Elements/y.webp";
+import bShape from "../resources/Shape Elements/b.webp";
+import gShape from "../resources/Shape Elements/g.webp";
+import y2Shape from "../resources/Shape Elements/y2.webp";
+import vShape from "../resources/Shape Elements/v.webp";
+import mugnaLogo from "../resources/Logo/mugnaLogo.webp";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Accordion from "../components/accordion";
@@ -64,7 +61,7 @@ export default function Home() {
       </div>
 
       <div className="journey">
-        <Image src={our_journey} width="1150" height="864" alt="pic" />
+        <Image src={ourJourney} width="1150" height="864" alt="pic" />
         <div className="journey-text-block text-block">
           <h2>
             <b>Our Journey</b>
@@ -83,7 +80,7 @@ export default function Home() {
         <div className="carousel-text">
           <Image
             className="saliyab-carousel"
-            src={what_is_saliyab}
+            src={whatIsSaliyab}
             width="1193"
             height="1296"
             alt="saliyab pic"
@@ -110,7 +107,7 @@ export default function Home() {
 
           <Image
             className="v-3"
-            src={testimonies_vector}
+            src={testimoniesVector}
             width="4074"
             height="4317"
             alt="pic"
@@ -126,7 +123,7 @@ export default function Home() {
       <div className="contact">
         <Image
           className="v-5"
-          src={want_to_experience}
+          src={wantToExperience}
           width="2006"
           height="2916"
           alt="pic"
@@ -272,7 +269,7 @@ export default function Home() {
           </div>
           <Image
             className="v-4-2"
-            src={faq_vector}
+            src={faqVector}
             width="4074"
             height="4317"
             alt="pic"
@@ -308,7 +305,7 @@ export default function Home() {
         </div>
         <Image
           className="o shape"
-          src={o_shape}
+          src={oShape}
           width="476"
           height="497"
           alt="pic"
@@ -316,7 +313,7 @@ export default function Home() {
         <div className="anti-overflow">
           <Image
             className="y shape"
-            src={y_shape}
+            src={yShape}
             width="475"
             height="453"
             alt="pic"
@@ -328,28 +325,28 @@ export default function Home() {
       <div className="footer" id="contactUs">
         <Image
           className="b shape"
-          src={b_shape}
+          src={bShape}
           width="406"
           height="399"
           alt="pic"
         />
         <Image
           className="g shape"
-          src={g_shape}
+          src={gShape}
           width="376"
           height="387"
           alt="pic"
         />
         <Image
           className="y2 shape"
-          src={y2_shape}
+          src={y2Shape}
           width="450"
           height="475"
           alt="pic"
         />
         <Image
           className="v shape"
-          src={v_shape}
+          src={vShape}
           width="658"
           height="594"
           alt="pic"
@@ -357,8 +354,8 @@ export default function Home() {
 
         <div className="spiel">
           <Image
-            className="mugna_logo"
-            src={mugna_logo}
+            className="mugnaLogo"
+            src={mugnaLogo}
             width="196"
             height="41"
             alt="pic"
