@@ -62,12 +62,18 @@ export default function DrawerAppBar(props: Props) {
           </ListItem>
         ))} */}
         <ListItem disablePadding>
-          <ListItemButton href="#faqsection" sx={{ textAlign: "center" }}>
+          <ListItemButton
+            href="#faqsection"
+            sx={{ textAlign: "center", textTransform: "none" }}
+          >
             <ListItemText primary={"FAQ"} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton href="#contactUs" sx={{ textAlign: "center" }}>
+          <ListItemButton
+            href="#contactUs"
+            sx={{ textAlign: "center", textTransform: "none" }}
+          >
             <ListItemText primary={"Contact Us"} />
           </ListItemButton>
         </ListItem>
@@ -122,10 +128,16 @@ export default function DrawerAppBar(props: Props) {
                 {item}
               </Button>
             ))} */}
-            <Button href="#faqsection" sx={{ color: "black", left: "-80px" }}>
+            <Button
+              href="#faqsection"
+              sx={{ color: "black", left: "-80px", textTransform: "none" }}
+            >
               FAQ
             </Button>
-            <Button href="#contactUs" sx={{ color: "black", left: "-60px" }}>
+            <Button
+              href="#contactUs"
+              sx={{ color: "black", left: "-60px", textTransform: "none" }}
+            >
               Contact Us
             </Button>
           </Box>

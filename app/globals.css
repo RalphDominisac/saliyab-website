@@ -10,11 +10,9 @@
   margin: 0;
   padding: 0;
 }
-/* .MuiButton-root {
-  border-radius: 15px;
-  color: white;
-  outline: white;
-} */
+.MuiButton-root {
+  font-family: "Montserrat", sans-serif;
+}
 
 /* nav {
   position: sticky;

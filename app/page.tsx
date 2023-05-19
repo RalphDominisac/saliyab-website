@@ -22,6 +22,9 @@ import Accordion from "../components/accordion";
 import ContactFormSpree from "../components/contactForm";
 import "./globals.css";
 import Link from "next/link";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Home() {
   return (
@@ -51,6 +54,7 @@ export default function Home() {
             color: "white",
             borderRadius: "15px",
             borderColor: "white",
+            textTransform: "none",
             ":hover": {
               bgcolor: "rgba(25, 25, 25, 0.8)", // theme.palette.primary.main
               color: "white",
@@ -58,7 +62,7 @@ export default function Home() {
             },
           }}
         >
-          Send Message
+          Send us a Message
         </Button>
       </div>
 
@@ -263,29 +267,38 @@ export default function Home() {
 
         <div className="links">
           <p>
-            <Link
-              href="https://www.facebook.com/mugna.tech"
-              style={{ textDecoration: "none", color: "white" }}
-              target="_blank"
-            >
-              &mdash;Facebook&emsp;
-            </Link>
+            <Button sx={{ textTransform: "none" }}>
+              <Link
+                href="https://www.facebook.com/mugna.tech"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+              >
+                <FacebookIcon />
+                Facebook&emsp;
+              </Link>
+            </Button>
 
-            <Link
-              href="https://www.instagram.com/mugna.tech/?hl=en"
-              style={{ textDecoration: "none", color: "white" }}
-              target="_blank"
-            >
-              &mdash;Instagram
-            </Link>
+            <Button sx={{ textTransform: "none" }}>
+              <Link
+                href="https://www.instagram.com/mugna.tech/?hl=en"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+              >
+                <InstagramIcon />
+                Instagram&emsp;
+              </Link>
+            </Button>
 
-            <Link
-              href="https://www.linkedin.com/company/mugna-tech"
-              style={{ textDecoration: "none", color: "white" }}
-              target="_blank"
-            >
-              &emsp;&mdash;LinkedIn
-            </Link>
+            <Button sx={{ textTransform: "none" }}>
+              <Link
+                href="https://www.linkedin.com/company/mugna-tech"
+                style={{ textDecoration: "none", color: "white" }}
+                target="_blank"
+              >
+                <LinkedInIcon />
+                LinkedIn&emsp;
+              </Link>
+            </Button>
           </p>
         </div>
 

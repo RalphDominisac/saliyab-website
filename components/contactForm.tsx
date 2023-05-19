@@ -6,6 +6,7 @@ import { FormControl } from "@mui/material";
 import { useForm, ValidationError } from "@formspree/react";
 import Typography from "@mui/material/Typography";
 import { Input } from "@mui/material";
+import Link from "next/link";
 
 // Formspree is only limited to 50 submissions per month
 const ContactForm = () => {
@@ -102,16 +103,14 @@ const ContactForm = () => {
                   color: "black",
                   borderColor: "black",
                 },
+                textTransform: "none",
               }}
             >
               Send Message
             </Button>
             or
             {/* Call scheduler */}
-            {/* https://www.youtube.com/watch?v=m5-eP7sv32M */}
-            {/* https://www.labnol.org/schedule-google-meeting-calendar-210529 */}
-            {/* https://stackoverflow.com/questions/64539847/how-to-create-a-new-google-meet-using-google-calendar-api */}
-            {/* https://github.com/sivadass/react-meeting-room */}
+            {/* I used https://calndr.link/ for call scheduler */}
             <Button
               variant="outlined"
               sx={{
@@ -124,9 +123,16 @@ const ContactForm = () => {
                   color: "black",
                   borderColor: "black",
                 },
+                textTransform: "none",
               }}
             >
-              Schedule a Call
+              <Link
+                href="https://calndr.link/e/RUPAHCtTRt?s=google"
+                style={{ textDecoration: "none", color: "black" }}
+                target="_blank"
+              >
+                Schedule a Call
+              </Link>
             </Button>
           </div>
         </form>
