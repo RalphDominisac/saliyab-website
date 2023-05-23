@@ -30,7 +30,6 @@ interface Props {
 }
 
 const drawerWidth = 240;
-// const navItems = ["FAQ", "Contact Us"];
 
 export default function NavBar(props: Props) {
   const { window } = props;
@@ -54,13 +53,6 @@ export default function NavBar(props: Props) {
       </Typography>
       <Divider />
       <List>
-        {/* {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
         <ListItem disablePadding>
           <ListItemButton
             href="#faqsection"
@@ -101,7 +93,7 @@ export default function NavBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          {/* ------------------fix center saliyab logo on mobile------------------------- */}
+
           <Typography
             variant="h6"
             component="div"
@@ -123,11 +115,6 @@ export default function NavBar(props: Props) {
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {/* {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black" }}>
-                {item}
-              </Button>
-            ))} */}
             <Button
               href="#faqsection"
               sx={{ color: "black", left: "-80px", textTransform: "none" }}

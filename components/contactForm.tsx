@@ -7,6 +7,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import Typography from "@mui/material/Typography";
 import { Input } from "@mui/material";
 import Link from "next/link";
+import { formspreeLink } from "../Constants/Formspree_Link/formspreeLink.js";
+import { calendlyLink } from "../Constants/Calendly_Link/calendlyLink.js";
 
 // Formspree is only limited to 50 submissions per month
 const ContactForm = () => {
@@ -14,7 +16,7 @@ const ContactForm = () => {
     <div>
       <div className="contact-form">
         {/* Currently linked on my personal email to receive submissions, already sent verification email to hello@mugna.tech to link its email and receive submissiona */}
-        <form action="https://formspree.io/f/xdovjvol" method="POST">
+        <form action={formspreeLink} method="POST">
           <label>
             Name *
             <Input
@@ -126,7 +128,7 @@ const ContactForm = () => {
               }}
             >
               <Link
-                href="https://calendly.com/mugna-tech"
+                href={calendlyLink}
                 style={{ textDecoration: "none", color: "black" }}
                 target="_blank"
               >

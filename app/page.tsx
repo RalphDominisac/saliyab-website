@@ -4,8 +4,8 @@ import Head from "next/head";
 import Script from "next/script";
 import Navbar from "../components/NavBar";
 import Carousel from "../components/Carousel";
-import ourJourney from "../resources/Carousel Images/Untitled1.webp";
-import whatIsSaliyab from "../resources/Carousel Images/Saliyab.webp";
+import ourJourney from "../resources/Carousel_Images/Untitled1.webp";
+import whatIsSaliyab from "../resources/Carousel_Images/Saliyab.webp";
 import testimoniesVector from "../resources/Illustrations/vector3.webp";
 import wantToExperience from "../resources/Illustrations/vector5.webp";
 import faqVector from "../resources/Illustrations/vector4.2.webp";
@@ -45,7 +45,6 @@ export default function Home() {
           The premier platform for sharing knowledge and sparking ideas in the
           field of Technology.
         </h6>
-        {/* <button className="sendMessage">Send Message</button> */}
         <Button
           href="#sendMessage"
           variant="outlined"

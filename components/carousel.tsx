@@ -1,11 +1,10 @@
 "use client";
-carouselmg1;
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import carouselmg1 from "../resources/Carousel Images/DSC07527.webp";
-import carouselmg2 from "../resources/Carousel Images/DSC07557.webp";
-import carouselmg3 from "../resources/Carousel Images/IMG_0488.webp";
+import carouselmg1 from "../resources/Carousel_Images/DSC07527.webp";
+import carouselmg2 from "../resources/Carousel_Images/DSC07557.webp";
+import carouselmg3 from "../resources/Carousel_Images/IMG_0488.webp";
 import Image from "next/image";
 import "/app/globals.css";
 
