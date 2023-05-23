@@ -6,7 +6,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "../app/globals.css";
-import { accordionData } from "./accordionData.js";
+import { accordionData } from "../data/accordionData.js";
 
 export default function Accordion() {
   const [search, setSearch] = useState("");

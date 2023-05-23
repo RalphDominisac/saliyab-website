@@ -109,8 +109,7 @@ const ContactForm = () => {
               Send Message
             </Button>
             or
-            {/* Call scheduler */}
-            {/* I used https://calndr.link/ for call scheduler */}
+            {/* Call scheduler CALENDLY */}
             <Button
               variant="outlined"
               sx={{
@@ -127,7 +126,7 @@ const ContactForm = () => {
               }}
             >
               <Link
-                href="https://calndr.link/e/RUPAHCtTRt?s=google"
+                href="https://calendly.com/mugna-tech"
                 style={{ textDecoration: "none", color: "black" }}
                 target="_blank"
               >
