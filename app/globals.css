@@ -570,6 +570,9 @@ p.copyright {
 
 /*----------------start------------min-width:320px----------------------------*/
 @media (min-width: 320px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
   .testimonials h2 {
     font-size: 50px;
   }
@@ -591,9 +594,7 @@ p.copyright {
     letter-spacing: 10px;
     margin-left: 20px;
   }
-  .saliyab-title-caption {
-    font-size: 18px;
-  }
+
   .lightblue,
   .green,
   .yellow,
@@ -697,6 +698,9 @@ p.copyright {
 
 /*-------------start---------------min-width:768px----------------------------*/
 @media (min-width: 768px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
   /* nav {
     padding: 10px 80px;
   }
@@ -724,12 +728,11 @@ p.copyright {
   .orange {
     font-size: 80px;
   }
-  .saliyab-title-caption {
-    font-size: 18px;
-  }
+
   .landing h6 {
     width: 30%;
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: 18px;
   }
   .sendMessage {
     margin-top: 10px;
@@ -917,9 +920,6 @@ p.copyright {
 
 /*------------------start----------min-width:900px----------------------------*/
 @media (min-width: 900px) {
-  .saliyab-title-caption {
-    font-size: 18px;
-  }
   .contact h2 {
     font-size: 52px;
   }
@@ -963,6 +963,9 @@ p.copyright {
   .carousel-quote {
     font-size: 28px;
     margin-top: -310px;
+  }
+  .saliyab-title-caption {
+    font-size: 18px;
   }
 }
 /*------------------------end----/min-width:900px/----------------------------*/
