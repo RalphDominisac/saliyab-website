@@ -123,6 +123,7 @@ export default function Home() {
               marginRight: "auto",
             }}
           />
+          {/* <Script src="../Constants/Carousel_Function/carouselFunction.js" /> */}
         </div>
       </div>
       <div className="contact">
@@ -301,7 +302,7 @@ export default function Home() {
           </p>
         </div>
 
-        <p className="copyright">&#169; Copyright 2021 Mugna Technologies</p>
+        <p className="copyright">&#169; Copyright 2023 Mugna Technologies</p>
       </div>
     </div>
   );
