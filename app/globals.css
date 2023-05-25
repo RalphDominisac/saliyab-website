@@ -14,19 +14,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* nav {
-  position: sticky;
-  display: flex;
-  padding: 10px 20px;
-  justify-content: space-between;
-  align-items: center;
+.testimonyText {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #384558;
 }
-nav p {
-  display: none;
+
+.testimonyQuoter {
+  color: #384558;
 }
-nav a {
-  margin: 0 20px;
-} */
 
 .carousel-quoter {
   background: rgba(25, 25, 25, 0.7);
@@ -38,7 +35,6 @@ nav a {
   background: rgba(25, 25, 25, 0.8);
   color: white;
   font-size: 35px;
-  /* margin-top: -490px; */
 }
 
 .saliyab-logo {
@@ -50,6 +46,36 @@ nav a {
   width: 100%;
   max-width: 150px;
   height: auto;
+}
+
+/* MUI Carousel CSS */
+.muiCarousel {
+  width: 61%;
+  left: 20%;
+  position: relative;
+}
+
+.muiPaper {
+  height: 530px;
+  background-color: #f2f2f2;
+  border-color: #384558;
+  border: "3px solid #384558";
+  border-radius: 15px;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 8%;
+  position: relative;
+}
+
+.right-arrow {
+  margin-top: -60%;
+  height: 104;
+  color: #f2f2f2;
+  width: 106;
+}
+
+.left-arrow {
+  margin-top: -60%;
 }
 
 /* Burger */
@@ -205,6 +231,7 @@ button {
   background-repeat: no-repeat;
   padding: 20px;
   padding-top: 40px;
+  height: 1710px;
 }
 .carousel-text {
   display: flex;
@@ -570,6 +597,18 @@ p.copyright {
 
 /*----------------start------------min-width:320px----------------------------*/
 @media (min-width: 320px) {
+  .right-arrow {
+    height: 70px;
+    width: auto;
+    /* margin-left: 200px; */
+  }
+  .muiCarousel {
+    width: 95%;
+    left: 2%;
+  }
+  .what-is-saliyab {
+    height: 2080px;
+  }
   .saliyab-title-caption {
     font-size: 18px;
   }

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 import Navbar from "../components/NavBar";
-import Carousel from "../components/Carousel";
 import ourJourney from "../resources/Carousel_Images/Untitled1.webp";
 import whatIsSaliyab from "../resources/Carousel_Images/Saliyab.webp";
 import testimoniesVector from "../resources/Illustrations/vector3.webp";
@@ -20,6 +19,7 @@ import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Accordion from "../components/Accordion";
 import ContactFormSpree from "../components/ContactForm";
+import MuiCarousel from "../components/MuiCarousel";
 import "./globals.css";
 import Link from "next/link";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -108,7 +108,9 @@ export default function Home() {
         <div className="testimonials">
           <h2>Testimonies</h2>
 
-          <Carousel />
+          {/* <Carousel /> */}
+
+          <MuiCarousel />
 
           <Image
             className="v-3"
@@ -117,13 +119,17 @@ export default function Home() {
             height="4317"
             alt="pic"
             style={{
-              top: -25,
+              // top: 1185,
+              top: "70%",
               display: "block",
               marginLeft: "auto",
               marginRight: "auto",
+              zIndex: "99999999999999",
+              position: "absolute",
+              // left: "780px",
+              left: "38%",
             }}
           />
-          {/* <Script src="../Constants/Carousel_Function/carouselFunction.js" /> */}
         </div>
       </div>
       <div className="contact">
