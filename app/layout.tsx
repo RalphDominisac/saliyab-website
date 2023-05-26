@@ -28,6 +28,7 @@ export default function RootLayout({
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      <Script src="../Constants/Carousel_Function/carouselFunction.js" />
 
       <body className={inter.className}>{children}</body>
     </html>

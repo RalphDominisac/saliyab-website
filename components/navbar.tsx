@@ -20,6 +20,7 @@ import saliyab_plain_logo from "../resources/Logo/saliyab_plain_logo.webp";
 import "../app/globals.css";
 import Link from "next/link";
 import { Container } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface Props {
   /**
@@ -29,7 +30,7 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
+const drawerWidth = 400;
 
 export default function NavBar(props: Props) {
   const { window } = props;
@@ -38,17 +39,20 @@ export default function NavBar(props: Props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  // drawer
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle}>
+      <IconButton sx={{ float: "right", mt: 2, mr: 2 }}>
+        <CloseIcon style={{ color: "#384558" }} fontSize="large" />
+      </IconButton>
       <Typography variant="h6" sx={{ my: 2 }}>
         <Image
-          className="saliyab-plain-logo"
-          src={saliyab_plain_logo}
+          className="saliyab-drawer-logo"
+          src={saliyab_logo}
           width="891"
           height="274"
-          alt="saliyab plain logo"
-          style={{ marginLeft: "68px" }}
+          alt="saliyab drawer logo"
+          style={{ marginLeft: "28px" }}
         />
       </Typography>
       <Divider />
@@ -56,20 +60,75 @@ export default function NavBar(props: Props) {
         <ListItem disablePadding>
           <ListItemButton
             href="#faqsection"
-            sx={{ textAlign: "center", textTransform: "none" }}
+            sx={{ textAlign: "left", textTransform: "none" }}
           >
-            <ListItemText primary={"FAQ"} />
+            <ListItemText
+              disableTypography
+              primary={
+                <Typography
+                  style={{
+                    fontWeight: "bold",
+                    color: "#384558",
+                    fontFamily: "Montserrat",
+                    fontSize: 22,
+                    marginLeft: 45,
+                  }}
+                >
+                  FAQ
+                </Typography>
+              }
+            />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton
             href="#contactUs"
-            sx={{ textAlign: "center", textTransform: "none" }}
+            sx={{ textAlign: "left", textTransform: "none" }}
           >
-            <ListItemText primary={"Contact Us"} />
+            <ListItemText
+              disableTypography
+              primary={
+                <Typography
+                  style={{
+                    fontWeight: "bold",
+                    color: "#384558",
+                    fontFamily: "Montserrat",
+                    fontSize: 22,
+                    marginLeft: 45,
+                  }}
+                >
+                  Contact Us
+                </Typography>
+              }
+            />
           </ListItemButton>
         </ListItem>
       </List>
+      <div className="bottomPush">
+        <Typography
+          style={{
+            fontWeight: "bold",
+            color: "#384558",
+            fontFamily: "Montserrat",
+            fontSize: 22,
+            textAlign: "left",
+            marginLeft: 52,
+          }}
+        >
+          Get in touch
+        </Typography>
+        <Typography
+          style={{
+            color: "#384558",
+            fontFamily: "Montserrat",
+            fontSize: 22,
+            textAlign: "left",
+            marginLeft: 52,
+          }}
+        >
+          hello@mugna.tech
+        </Typography>
+      </div>
     </Box>
   );
 
@@ -84,16 +143,6 @@ export default function NavBar(props: Props) {
         style={{ backgroundColor: "white", color: "black" }}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-
           <Typography
             variant="h6"
             component="div"
@@ -109,10 +158,19 @@ export default function NavBar(props: Props) {
                 width="891"
                 height="274"
                 alt="saliyab logoo"
-                style={{ marginLeft: "57px" }}
+                style={{ marginLeft: "20px" }}
               />
             </Link>
           </Typography>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 1, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button
@@ -132,6 +190,7 @@ export default function NavBar(props: Props) {
       </AppBar>
       <Box component="nav">
         <Drawer
+          anchor="right"
           container={container}
           variant="temporary"
           open={mobileOpen}
