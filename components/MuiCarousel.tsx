@@ -6,7 +6,7 @@ import rightArrow from "../resources/Shape Elements/right-arrow.webp";
 import Image from "next/image";
 import "../app/globals.css";
 
-export default function Example() {
+export default function MuiCarousel() {
   var items = [
     {
       name: " Saliyab's workshop was a game-changer for me. The insights and practical advice I gained from the experts in the field helped me totake my skills to the next level and make a real impact in my work. I highly recommend it! ",
