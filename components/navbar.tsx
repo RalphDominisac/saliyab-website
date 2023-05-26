@@ -39,7 +39,7 @@ export default function NavBar(props: Props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  // drawer
   const drawer = (
     <Box onClick={handleDrawerToggle}>
       <IconButton sx={{ float: "right", mt: 2, mr: 2 }}>
