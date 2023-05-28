@@ -20,18 +20,19 @@ const ContactForm = () => {
           <label>
             Name *
             <Input
+              id="contactInputs"
               required
               type="name"
               name="name"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
+              // sx={{
+              //   width: {
+              //     xs: "170%",
+              //     sm: "450px",
+              //     md: "600px",
+              //     lg: "750px",
+              //     xl: "750px",
+              //   },
+              // }}
             />
           </label>
           <br />
@@ -39,18 +40,19 @@ const ContactForm = () => {
           <label>
             Email Address *
             <Input
+              id="contactInputs"
               required
               type="email"
               name="email"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
+              // sx={{
+              //   width: {
+              //     xs: "170%",
+              //     sm: "450px",
+              //     md: "600px",
+              //     lg: "750px",
+              //     xl: "750px",
+              //   },
+              // }}
             />
           </label>
           <br />
@@ -58,18 +60,19 @@ const ContactForm = () => {
           <label>
             Contact Number *
             <Input
+              id="contactInputs"
               required
               type="contact"
               name="contact"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
+              // sx={{
+              //   width: {
+              //     xs: "170%",
+              //     sm: "450px",
+              //     md: "600px",
+              //     lg: "750px",
+              //     xl: "750px",
+              //   },
+              // }}
             />
           </label>
           <br />
@@ -77,17 +80,18 @@ const ContactForm = () => {
           <label>
             Your Message *
             <Input
+              id="contactInputs"
               required
               name="message"
-              sx={{
-                width: {
-                  xs: "350px",
-                  sm: "450px",
-                  md: "600px",
-                  lg: "750px",
-                  xl: "750px",
-                },
-              }}
+              // sx={{
+              //   width: {
+              //     xs: "170%",
+              //     sm: "450px",
+              //     md: "600px",
+              //     lg: "750px",
+              //     xl: "750px",
+              //   },
+              // }}
             />
           </label>
 
@@ -110,7 +114,7 @@ const ContactForm = () => {
             >
               Send Message
             </Button>
-            or
+            <span className="orWord">or</span>
             {/* Call scheduler CALENDLY */}
             <Button
               variant="outlined"

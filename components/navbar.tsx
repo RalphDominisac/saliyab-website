@@ -30,7 +30,7 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 400;
+const drawerWidth = "100%";
 
 export default function NavBar(props: Props) {
   const { window } = props;
@@ -140,7 +140,7 @@ export default function NavBar(props: Props) {
       <CssBaseline />
       <AppBar
         component="nav"
-        style={{ backgroundColor: "white", color: "black" }}
+        style={{ backgroundColor: "white", color: "black", position: "fixed" }}
       >
         <Toolbar>
           <Typography

@@ -13,6 +13,22 @@
 .MuiButton-root {
   font-family: "Montserrat", sans-serif;
 }
+.wrapper {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.testimonyVector {
+  top: 78%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+  /* left: 15%; */
+  height: 300px;
+}
 
 .testimonyText {
   font-size: 30px;
@@ -53,6 +69,7 @@
   width: 61%;
   left: 20%;
   position: relative;
+  padding: 1%;
 }
 
 .muiPaper {
@@ -68,14 +85,15 @@
 }
 
 .right-arrow {
-  margin-top: -60%;
-  height: 104;
+  margin-top: -350%;
+  /* height: 104; */
   color: #f2f2f2;
-  width: 106;
+  /* width: 106; */
 }
 
 .left-arrow {
-  margin-top: -60%;
+  margin-top: -350%;
+  color: #f2f2f2;
 }
 
 /* Burger */
@@ -100,7 +118,8 @@
   background-position: 55% 50%;
   background-repeat: no-repeat;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
+  width: 103%;
   color: #f2f2f2;
 }
 
@@ -172,6 +191,7 @@ button {
   color: #f2f2f2;
   z-index: 2;
   padding-bottom: 50px;
+  width: 103%;
 }
 
 .journey img {
@@ -196,7 +216,7 @@ button {
   background-color: #f2f2f2;
   position: relative;
   height: 20vw;
-  width: 100%;
+  width: 103%;
   box-sizing: border-box;
 }
 
@@ -232,6 +252,7 @@ button {
   padding: 20px;
   padding-top: 40px;
   height: 1710px;
+  width: 103%;
 }
 .carousel-text {
   display: flex;
@@ -339,6 +360,7 @@ img.v-3 {
   color: #384558;
   margin: 50px auto 0 auto;
   padding: 0 30px;
+  /* width: 106%; */
 }
 .v-5 {
   display: none;
@@ -395,6 +417,7 @@ img.v-3 {
   position: relative;
   color: #384558;
   padding: 30px;
+  width: 103%;
 }
 .faq-content {
   padding: 40px;
@@ -444,6 +467,9 @@ img.v-3 {
   width: 100%;
   border-radius: 15px;
   border-width: thin;
+  padding-left: 60px;
+  color: #384558;
+  background-color: rgba(242, 242, 242, 0);
 }
 .faq-dd {
   grid-area: dd;
@@ -459,13 +485,26 @@ img.v-3 {
   margin: 40px auto;
   margin-left: 0;
 }
-.v-4-2 {
+/* .v-4-2 {
   grid-area: image;
   height: auto;
   width: 150px;
   margin: 0 auto;
   object-fit: cover;
+  width: 4074;
+  height: 4317;
+} */
+
+.v-4-2 {
+  grid-area: image;
+  height: 350px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  /* width: 4074;
+  height: 4317; */
 }
+
 @media (min-width: 650px) {
   .v-4-2 {
     width: 350px;
@@ -479,6 +518,7 @@ img.v-3 {
   text-align: center;
   padding: 40px 40px 15px 40px;
   overflow: hidden;
+  width: 103%;
 }
 .footer * {
   z-index: 3;
@@ -591,20 +631,117 @@ p.copyright {
   min-width: 307px;
 }
 
+.accordionMui {
+  background-color: rgba(242, 242, 242, 0.1);
+  color: #384558;
+}
+
+.MuiAccordion-region {
+  /* background-color: red; */
+}
+
+#panel1a-header {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* start Contact form input media queries */
+@media (min-width: 320px) {
+  #contactInputs {
+    width: 260px;
+  }
+}
+
+@media (min-width: 380px) {
+  #contactInputs {
+    width: 325px;
+  }
+}
+
+@media (min-width: 420px) {
+  #contactInputs {
+    width: 370px;
+  }
+}
+
+@media (min-width: 470px) {
+  #contactInputs {
+    width: 420px;
+  }
+}
+
+@media (min-width: 520px) {
+  #contactInputs {
+    width: 465px;
+  }
+}
+
+@media (min-width: 580px) {
+  #contactInputs {
+    width: 530px;
+  }
+}
+
+@media (min-width: 640px) {
+  #contactInputs {
+    width: 590px;
+  }
+}
+
+@media (min-width: 700px) {
+  #contactInputs {
+    width: 660px;
+  }
+}
+
+@media (min-width: 760px) {
+  #contactInputs {
+    width: 710px;
+  }
+}
+
+/* end Contact form input media queries */
+
 /*=======================
   ==== MEDIA QUERIES ===========================================================================================
   =======================*/
 
 /*----------------start------------min-width:320px----------------------------*/
 @media (min-width: 320px) {
-  .right-arrow {
-    height: 70px;
+  .accordionMui {
+    width: 145%;
+    left: -20%;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: -2%;
     width: auto;
-    /* margin-left: 200px; */
+    height: 300px;
+  }
+  .muiPaper {
+    padding-top: 25%;
+  }
+  .testimonyText {
+    font-size: 16px;
+  }
+  .orWord {
+    display: block;
+    font-size: 20px;
+  }
+  .right-arrow {
+    height: 55px;
+    width: auto;
+    margin-top: -150%;
+  }
+  .left-arrow {
+    height: 55px;
+    width: auto;
+    margin-top: -150%;
   }
   .muiCarousel {
     width: 95%;
     left: 2%;
+    height: 600px;
   }
   .what-is-saliyab {
     height: 2080px;
@@ -613,7 +750,8 @@ p.copyright {
     font-size: 18px;
   }
   .testimonials h2 {
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 35px;
   }
   .saliyab-text-block p {
     order: 1;
@@ -631,7 +769,8 @@ p.copyright {
   }
   .textHeader {
     letter-spacing: 10px;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin: center;
   }
 
   .lightblue,
@@ -640,7 +779,7 @@ p.copyright {
   .violet,
   .blue,
   .orange {
-    font-size: 70px;
+    font-size: 50px;
   }
   .sendMessage {
     font-size: 15px;
@@ -651,45 +790,44 @@ p.copyright {
     width: 250px;
   }
   .o {
-    bottom: -160px;
-    left: -50px;
+    bottom: -130px;
+    /* left: -50px; */
     transform: rotate(15deg);
     z-index: 5;
-    height: 110px;
-    left: -65px;
+    height: 210px;
+    left: -42px;
+    width: auto;
   }
   .y {
-    bottom: -130px;
-    right: -50px;
-    transform: rotate(20deg);
-    z-index: 5;
-    top: 70px;
+    right: -25px;
+    margin-top: -100px;
     height: 140px;
+    width: auto;
   }
-  .anti-overflow {
-    bottom: -90px;
-  }
+
   .b {
-    height: 246.53px;
-    top: 180px;
-    left: -60px;
+    height: 140px;
+    top: 250px;
+    left: -30px;
+    width: auto;
   }
   .g {
-    height: 256.62px;
-    top: 165px;
-    right: -90px;
+    height: 165px;
+    top: 230px;
+    right: -50px;
+    width: auto;
   }
   .y2 {
-    height: 250px;
-    top: 410px;
-    left: -130px;
-    transform: rotate(5deg);
+    height: 170px;
+    top: 500px;
+    left: -88px;
+    width: auto;
   }
   .v {
-    height: 156.93px;
-    top: 430px;
-    transform: rotate(-80deg);
-    right: -110px;
+    height: 110px;
+    top: 520px;
+    right: -42px;
+    width: auto;
   }
   .carousel-quote {
     font-size: 13px;
@@ -711,7 +849,7 @@ p.copyright {
   .faq-content h6 {
     font-size: 16px;
   }
-  .v-5 {
+  /* .v-5 {
     position: relative;
     bottom: 50px;
     display: block;
@@ -719,7 +857,7 @@ p.copyright {
     width: 300px;
     flex-shrink: 5;
     left: -55px;
-  }
+  } */
 
   /* center saliyab logo on mobile - doesn't work for some reason */
   .saliyab-logo {
@@ -732,21 +870,211 @@ p.copyright {
     margin-left: auto;
     margin-right: auto;
   }
+  /* .v-4-2 {
+    width: 90px;
+  } */
+  .v-4-2 {
+    height: 80px;
+    /* width: 999999999px; */
+    /* width: 4074;
+  height: 4317; */
+  }
 }
 /*-------------------end---------/min-width:320px/----------------------------*/
 
+@media (min-width: 370px) {
+  .v-4-2 {
+    height: 80px;
+    /* width: 4074;
+  height: 4317; */
+  }
+}
+
+/*-----------------------start-----/min-width:404px/----------------------------*/
+@media (min-width: 404px) {
+  .testimonyVector {
+    top: 65%;
+    left: 12%;
+    width: auto;
+    height: 300px;
+  }
+  .testimonyText {
+    font-size: 19px;
+  }
+  .muiPaper {
+    padding-top: 16%;
+  }
+
+  .accordionMui {
+    width: 160%;
+    left: -17%;
+  }
+  .v-4-2 {
+    height: 90px;
+    /* width: 4074;
+  height: 4317; */
+  }
+}
+/*-------------------end---------/min-width:404px/----------------------------*/
+
+/*-----------------------start-----/min-width:420px/----------------------------*/
+@media (min-width: 420px) {
+  .testimonyVector {
+    top: 65%;
+    left: 12%;
+    width: auto;
+    height: 300px;
+  }
+  .muiPaper {
+    padding-top: 25%;
+  }
+  .v-4-2 {
+    height: 100px;
+    /* width: 4074;
+  height: 4317; */
+  }
+}
+/*-------------------end---------/min-width:420px/----------------------------*/
+
+/*-----------------------start-----/min-width:500px/----------------------------*/
+@media (min-width: 500px) {
+  .accordionMui {
+    width: 160%;
+    left: -11%;
+  }
+}
+/*-------------------end---------/min-width:500px/----------------------------*/
+
+/*----------------------------start min-width:600px----------------------------*/
+@media (min-width: 600px) {
+  .testimonyVector {
+    top: 65%;
+    left: 25%;
+    width: auto;
+    height: 300px;
+  }
+  .shape {
+    position: absolute;
+    height: auto;
+    width: 250px;
+  }
+  .o {
+    bottom: -160px;
+    left: -50px;
+    transform: rotate(15deg);
+    z-index: 5;
+  }
+  .y {
+    bottom: -130px;
+    right: -50px;
+    transform: rotate(20deg);
+    z-index: 5;
+  }
+  .anti-overflow {
+    bottom: -90px;
+  }
+  .b {
+    height: 246.53px;
+    top: 130px;
+    left: -60px;
+  }
+  .g {
+    height: 256.62px;
+    top: 165px;
+    right: -90px;
+  }
+  .y2 {
+    height: 250px;
+    top: 410px;
+    left: -130px;
+    transform: rotate(5deg);
+  }
+  .v {
+    height: 156.93px;
+    top: 430px;
+    transform: rotate(-80deg);
+    right: -110px;
+  }
+}
+/*----------------------------/ end min-width:600px/----------------------------*/
+
+/*-----------------------start-----/min-width:650px/----------------------------*/
+@media (min-width: 650px) {
+  .accordionMui {
+    width: 160%;
+    left: -4%;
+  }
+  .wrapper {
+    position: relative;
+    margin-bottom: 170px;
+  }
+  .v-4-2 {
+    height: 200px;
+    /* width: 999999999px; */
+    /* width: 4074;
+  height: 4317; */
+  }
+}
+/*-------------------end---------/min-width:650px/----------------------------*/
+
+/*----------------------------/ start min-width:700px/----------------------------*/
+
+@media (min-width: 700px) {
+  .accordionMui {
+    width: 160%;
+    left: -1%;
+  }
+  .muiCarousel {
+    width: 80%;
+    left: 11%;
+    height: 600px;
+  }
+
+  .right-arrow {
+    height: 80px;
+    width: auto;
+    margin-top: -150%;
+  }
+
+  .left-arrow {
+    height: 80px;
+    width: auto;
+    margin-top: -150%;
+  }
+}
+/*----------------------------/ end min-width:700px/----------------------------*/
+/*----------------------------/ start min-width:740px/----------------------------*/
+
+@media (min-width: 740px) {
+  .wrapper {
+    position: relative;
+    margin-bottom: 200px;
+  }
+  .v-4-2 {
+    height: 250px;
+  }
+}
+/*----------------------------/ end min-width:740px/----------------------------*/
+
 /*-------------start---------------min-width:768px----------------------------*/
 @media (min-width: 768px) {
+  .accordionMui {
+    width: 160%;
+    left: 1%;
+  }
+  #contactInputs {
+    width: 375px;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 30%;
+    width: auto;
+    height: 300px;
+  }
   .saliyab-title-caption {
     font-size: 18px;
   }
-  /* nav {
-    padding: 10px 80px;
-  }
-  nav p {
-    font-size: 15px;
-    display: inline;
-  } */
+
   h2 {
     font-size: 50px;
   }
@@ -880,14 +1208,14 @@ p.copyright {
     left: -75px;
     transform: rotate(0deg);
     z-index: 5;
-    height: 200px;
+    /* height: 200px; */
   }
   .y {
     bottom: -130px;
     right: -50px;
     transform: rotate(5deg);
     z-index: 5;
-    height: 140px;
+    /* height: 140px; */
   }
   .b {
     top: 50px;
@@ -957,8 +1285,61 @@ p.copyright {
 
 /*------------------end----------/min-width:768px/----------------------------*/
 
+@media (min-width: 814px) {
+  .wrapper {
+    position: relative;
+    margin-bottom: 250px;
+  }
+}
+
+@media (min-width: 830px) {
+  .v-4-2 {
+    height: 280px;
+  }
+}
+
 /*------------------start----------min-width:900px----------------------------*/
 @media (min-width: 900px) {
+  .v-4-2 {
+    height: 350px;
+  }
+  .wrapper {
+    position: relative;
+    margin-bottom: 300px;
+  }
+  .accordionMui {
+    width: 160%;
+    left: 3%;
+  }
+  .orWord {
+    display: inline;
+  }
+  #contactInputs {
+    width: 480px;
+  }
+  .right-arrow {
+    height: 90px;
+    width: auto;
+    margin-top: -110%;
+  }
+
+  .left-arrow {
+    height: 90px;
+    width: auto;
+    margin-top: -110%;
+  }
+  .muiPaper {
+    padding-top: 14%;
+  }
+  .testimonyText {
+    font-size: 25px;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 33%;
+    width: auto;
+    height: 300px;
+  }
   .contact h2 {
     font-size: 52px;
   }
@@ -1011,6 +1392,16 @@ p.copyright {
 
 /*------------------start----------min-width:1024px----------------------------*/
 @media (min-width: 1024px) {
+  .accordionMui {
+    width: 150%;
+    left: 5%;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 33%;
+    width: auto;
+    height: 300px;
+  }
   .saliyab-title-caption {
     font-size: 24px;
   }
@@ -1060,18 +1451,60 @@ p.copyright {
     font-size: 40px;
     margin-top: -420px;
   }
-  .y {
+  /* .y {
     bottom: -130px;
     right: -50px;
     transform: rotate(5deg);
     z-index: 5;
     height: 140px;
-  }
+  } */
 }
 /*----------------end------------/min-width:1024px/----------------------------*/
 
+/*----------------start------------/min-width:1120px/----------------------------*/
+@media (min-width: 1120px) {
+  .accordionMui {
+    width: 150%;
+    left: 1%;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 34%;
+    width: auto;
+    height: 300px;
+  }
+  .muiCarousel {
+    width: 70%;
+    left: 15%;
+    height: 608px;
+  }
+}
+/*------------------end------------/min-width:1120px/----------------------------*/
+
+/*----------------start------------/min-width:1170px/----------------------------*/
+@media (min-width: 1170px) {
+  .accordionMui {
+    width: 140%;
+    left: 3%;
+  }
+  #contactInputs {
+    width: 700px;
+  }
+}
+/*------------------end------------/min-width:1170px/----------------------------*/
+
 /*------------start----------------min-width:1200px----------------------------*/
 @media (min-width: 1200px) {
+  .accordionMui {
+    width: 130%;
+    left: 3%;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 34%;
+    width: auto;
+    height: 300px;
+  }
   .saliyab-title-caption {
     font-size: 18px;
   }
@@ -1088,7 +1521,7 @@ p.copyright {
     width: 375px;
     transform: rotate(5deg);
     z-index: 5;
-    height: 200px;
+    /* height: 200px; */
   }
   .anti-overflow {
     bottom: -90px;
@@ -1112,6 +1545,38 @@ p.copyright {
 
 /*----------------start------------min-width:1440px----------------------------*/
 @media (min-width: 1440px) {
+  .accordionMui {
+    width: 160%;
+    left: 1%;
+  }
+  .right-arrow {
+    height: 130px;
+    width: auto;
+    margin-top: -100%;
+  }
+
+  .left-arrow {
+    height: 130px;
+    width: auto;
+    margin-top: -100%;
+  }
+  .muiCarousel {
+    width: 70%;
+    left: 15%;
+    height: 650px;
+    padding: 1%;
+  }
+  .muiPaper {
+    padding-top: 12%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .testimonyVector {
+    top: 60%;
+    left: 33%;
+    width: auto;
+    height: 380px;
+  }
   .saliyab-title-caption {
     font-size: 18px;
   }
@@ -1213,19 +1678,29 @@ p.copyright {
   .address {
     margin-top: 20px;
   }
-  .y {
+  /* .y {
     bottom: -130px;
     right: -90px;
     width: 375px;
     transform: rotate(5deg);
     z-index: 5;
     height: 200px;
+  } */
+  .orWord {
+    display: inline;
   }
 }
 /*------------------end----------/min-width:1440px/----------------------------*/
 
 /*---------------start-------------min-width:1800px----------------------------*/
 @media (min-width: 1800px) {
+  .accordionMui {
+    width: 120%;
+    left: 1%;
+  }
+  .orWord {
+    display: inline;
+  }
   .saliyab-title-caption {
     font-size: 18px;
   }
@@ -1253,14 +1728,19 @@ p.copyright {
   .v {
     left: 33%;
   }
-  .y {
+  .wrapper {
+    position: relative;
+    margin-bottom: 300px;
+    width: 500px;
+  }
+  /* .y {
     bottom: -130px;
     right: -90px;
     width: 375px;
     transform: rotate(5deg);
     z-index: 5;
     height: 200px;
-  }
+  } */
 }
 /*-------------end---------------/min-width:1800px/----------------------------*/
 
@@ -1320,3 +1800,32 @@ label {
   text-align: "center";
   padding-bottom: 10;
 }
+
+/* input icon search bar CSS */
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+input::placeholder {
+  color: #384558;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .v-4-2 {
+  grid-area: image;
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+  left: 155px;
+  width: 4074;
+  height: 4317;
+} */

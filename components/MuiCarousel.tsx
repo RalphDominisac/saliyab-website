@@ -5,7 +5,9 @@ import leftArrow from "../resources/Shape Elements/left-arrow.webp";
 import rightArrow from "../resources/Shape Elements/right-arrow.webp";
 import Image from "next/image";
 import "../app/globals.css";
+import testimoniesVector from "../resources/Illustrations/vector3.webp";
 
+// from npm library https://www.npmjs.com/package/react-material-ui-carousel
 export default function MuiCarousel() {
   var items = [
     {
@@ -78,6 +80,22 @@ function Item(props: any) {
       }}
     >
       <q className="testimonyText">{props.item.name}</q>
+      <Image
+        className="testimonyVector"
+        src={testimoniesVector}
+        alt="pic"
+        // style={{
+        //   // top: 1185,
+        //   top: "70%",
+        //   display: "block",
+        //   marginLeft: "auto",
+        //   marginRight: "auto",
+        //   zIndex: "99999999999999",
+        //   position: "absolute",
+        //   // left: "780px",
+        //   left: "38%",
+        // }}
+      />
       {/* <p className="testimonyQuoter">{props.item.description}</p> */}
     </Paper>
   );

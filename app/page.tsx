@@ -112,24 +112,22 @@ export default function Home() {
 
           <MuiCarousel />
 
-          <Image
-            className="v-3"
+          {/* <Image
+            className="testimonyVector"
             src={testimoniesVector}
-            width="4074"
-            height="4317"
             alt="pic"
-            style={{
-              // top: 1185,
-              top: "70%",
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-              zIndex: "99999999999999",
-              position: "absolute",
-              // left: "780px",
-              left: "38%",
-            }}
-          />
+            // style={{
+            //   // top: 1185,
+            //   top: "70%",
+            //   display: "block",
+            //   marginLeft: "auto",
+            //   marginRight: "auto",
+            //   zIndex: "99999999999999",
+            //   position: "absolute",
+            //   // left: "780px",
+            //   left: "38%",
+            // }}
+          /> */}
         </div>
       </div>
       <div className="contact">
@@ -171,9 +169,9 @@ export default function Home() {
           <Image
             className="v-4-2"
             src={faqVector}
+            alt="pic"
             width="4074"
             height="4317"
-            alt="pic"
           />
 
           <div className="faq-end">
