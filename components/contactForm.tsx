@@ -15,44 +15,21 @@ const ContactForm = () => {
   return (
     <div>
       <div className="contact-form">
-        {/* Currently linked on my personal email to receive submissions, already sent verification email to hello@mugna.tech to link its email and receive submissiona */}
+        {/* Currently linked on my personal email to receive submissions, already sent verification email to hello@mugna.tech to link its email and receive submission */}
         <form action={formspreeLink} method="POST">
           <label>
             Name *
-            <Input
-              id="contactInputs"
-              required
-              type="name"
-              name="name"
-              // sx={{
-              //   width: {
-              //     xs: "170%",
-              //     sm: "450px",
-              //     md: "600px",
-              //     lg: "750px",
-              //     xl: "750px",
-              //   },
-              // }}
-            />
+            <Input className="contactInputs" required type="name" name="name" />
           </label>
           <br />
           <br />
           <label>
             Email Address *
             <Input
-              id="contactInputs"
+              className="contactInputs"
               required
               type="email"
               name="email"
-              // sx={{
-              //   width: {
-              //     xs: "170%",
-              //     sm: "450px",
-              //     md: "600px",
-              //     lg: "750px",
-              //     xl: "750px",
-              //   },
-              // }}
             />
           </label>
           <br />
@@ -60,39 +37,17 @@ const ContactForm = () => {
           <label>
             Contact Number *
             <Input
-              id="contactInputs"
+              className="contactInputs"
               required
               type="contact"
               name="contact"
-              // sx={{
-              //   width: {
-              //     xs: "170%",
-              //     sm: "450px",
-              //     md: "600px",
-              //     lg: "750px",
-              //     xl: "750px",
-              //   },
-              // }}
             />
           </label>
           <br />
           <br />
           <label>
             Your Message *
-            <Input
-              id="contactInputs"
-              required
-              name="message"
-              // sx={{
-              //   width: {
-              //     xs: "170%",
-              //     sm: "450px",
-              //     md: "600px",
-              //     lg: "750px",
-              //     xl: "750px",
-              //   },
-              // }}
-            />
+            <Input className="contactInputs" required name="message" />
           </label>
 
           <div className="contact-buttons">

@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
@@ -10,6 +7,7 @@
   margin: 0;
   padding: 0;
 }
+
 .MuiButton-root {
   font-family: "Montserrat", sans-serif;
 }
@@ -118,8 +116,8 @@
   background-position: 55% 50%;
   background-repeat: no-repeat;
   text-align: center;
-  /* width: 100%; */
-  width: 103%;
+  width: 100%;
+  /* width: 103%; */
   color: #f2f2f2;
 }
 
@@ -191,7 +189,7 @@ button {
   color: #f2f2f2;
   z-index: 2;
   padding-bottom: 50px;
-  width: 103%;
+  /* width: 103%; */
 }
 
 .journey img {
@@ -216,7 +214,7 @@ button {
   background-color: #f2f2f2;
   position: relative;
   height: 20vw;
-  width: 103%;
+  /* width: 103%; */
   box-sizing: border-box;
 }
 
@@ -246,13 +244,11 @@ button {
   flex-direction: column;
   color: #384558;
   background-color: #f2f2f2;
-  background-image: url("../resources/Shape Elements/mobile-what-is-saliyab.webp");
   background-size: 370px auto;
   background-repeat: no-repeat;
   padding: 20px;
   padding-top: 40px;
-  height: 1710px;
-  width: 103%;
+  height: 1650px;
 }
 .carousel-text {
   display: flex;
@@ -417,7 +413,7 @@ img.v-3 {
   position: relative;
   color: #384558;
   padding: 30px;
-  width: 103%;
+  /* width: 103%; */
 }
 .faq-content {
   padding: 40px;
@@ -518,7 +514,7 @@ img.v-3 {
   text-align: center;
   padding: 40px 40px 15px 40px;
   overflow: hidden;
-  width: 103%;
+  /* width: 103%; */
 }
 .footer * {
   z-index: 3;
@@ -529,6 +525,7 @@ img.v-3 {
   height: auto;
   z-index: 2;
 }
+
 .o {
   width: 199px;
   bottom: -130px;
@@ -631,8 +628,7 @@ p.copyright {
   min-width: 307px;
 }
 
-.accordionMui {
-  background-color: rgba(242, 242, 242, 0.1);
+.accordionStyling {
   color: #384558;
 }
 
@@ -647,58 +643,97 @@ p.copyright {
 
 /* start Contact form input media queries */
 @media (min-width: 320px) {
-  #contactInputs {
+  .contactInputs {
     width: 260px;
   }
 }
 
 @media (min-width: 380px) {
-  #contactInputs {
+  .contactInputs {
     width: 325px;
   }
 }
 
 @media (min-width: 420px) {
-  #contactInputs {
+  .contactInputs {
     width: 370px;
   }
 }
 
 @media (min-width: 470px) {
-  #contactInputs {
+  .contactInputs {
     width: 420px;
   }
 }
 
 @media (min-width: 520px) {
-  #contactInputs {
+  .contactInputs {
     width: 465px;
   }
 }
 
 @media (min-width: 580px) {
-  #contactInputs {
+  .contactInputs {
     width: 530px;
   }
 }
 
 @media (min-width: 640px) {
-  #contactInputs {
+  .contactInputs {
     width: 590px;
   }
 }
 
 @media (min-width: 700px) {
-  #contactInputs {
+  .contactInputs {
     width: 660px;
   }
 }
 
 @media (min-width: 760px) {
-  #contactInputs {
+  .contactInputs {
     width: 710px;
   }
 }
+
+/*    start -------------  What is Saliyab section shapes CSS */
+
+.I-1 {
+  opacity: 0.2;
+}
+.Y-1 {
+  opacity: 0.2;
+}
+
+.L-1 {
+  opacity: 0.2;
+}
+
+.S-2 {
+  opacity: 0.2;
+}
+
+.I-2 {
+  opacity: 0.2;
+}
+
+.B-2 {
+  opacity: 0.2;
+}
+
+.L-3 {
+  opacity: 0.2;
+}
+
+.Y-4 {
+  opacity: 0.2;
+}
+
+.P-4 {
+  opacity: 0.2;
+}
+
+/*    end -------------------  What is Saliyab section shapes CSS */
 
 /* end Contact form input media queries */
 
@@ -708,7 +743,49 @@ p.copyright {
 
 /*----------------start------------min-width:320px----------------------------*/
 @media (min-width: 320px) {
-  .accordionMui {
+  .what-is-saliyab {
+    height: 2050px;
+  }
+  .carousel-text img.saliyab-carousel {
+    width: 245px;
+  }
+  .I-1 {
+    top: 5%;
+    left: -135px;
+  }
+  .S-2 {
+    left: -150px;
+    top: 40%;
+  }
+  .carousel-text img.I-2 {
+    top: 30%;
+    width: 400px;
+  }
+  .Y-1 {
+    opacity: 0;
+  }
+
+  .L-1 {
+    opacity: 0;
+  }
+  .B-2 {
+    opacity: 0;
+  }
+
+  .L-3 {
+    opacity: 0;
+  }
+
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 80%;
+    left: -35%;
+  }
+
+  .P-4 {
+    opacity: 0;
+  }
+  .accordionStyling {
     width: 145%;
     left: -20%;
   }
@@ -744,7 +821,7 @@ p.copyright {
     height: 600px;
   }
   .what-is-saliyab {
-    height: 2080px;
+    /* height: 2080px; */
   }
   .saliyab-title-caption {
     font-size: 18px;
@@ -882,11 +959,27 @@ p.copyright {
 }
 /*-------------------end---------/min-width:320px/----------------------------*/
 
+@media (min-width: 336px) {
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 72%;
+    left: -30%;
+  }
+}
+
 @media (min-width: 370px) {
   .v-4-2 {
     height: 80px;
     /* width: 4074;
   height: 4317; */
+  }
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 75%;
+    left: -30%;
+  }
+  .what-is-saliyab {
+    height: 1900px;
   }
 }
 
@@ -905,7 +998,7 @@ p.copyright {
     padding-top: 16%;
   }
 
-  .accordionMui {
+  .accordionStyling {
     width: 160%;
     left: -17%;
   }
@@ -914,11 +1007,19 @@ p.copyright {
     /* width: 4074;
   height: 4317; */
   }
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 75%;
+    left: -30%;
+  }
 }
 /*-------------------end---------/min-width:404px/----------------------------*/
 
 /*-----------------------start-----/min-width:420px/----------------------------*/
 @media (min-width: 420px) {
+  .carousel-text img {
+    width: 245px;
+  }
   .testimonyVector {
     top: 65%;
     left: 12%;
@@ -933,20 +1034,36 @@ p.copyright {
     /* width: 4074;
   height: 4317; */
   }
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 75%;
+    left: -20%;
+  }
+  .what-is-saliyab {
+    height: 1800px;
+  }
 }
 /*-------------------end---------/min-width:420px/----------------------------*/
 
 /*-----------------------start-----/min-width:500px/----------------------------*/
 @media (min-width: 500px) {
-  .accordionMui {
+  .accordionStyling {
     width: 160%;
     left: -11%;
+  }
+  .what-is-saliyab {
+    height: 1700px;
   }
 }
 /*-------------------end---------/min-width:500px/----------------------------*/
 
 /*----------------------------start min-width:600px----------------------------*/
 @media (min-width: 600px) {
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 75%;
+    left: -15%;
+  }
   .testimonyVector {
     top: 65%;
     left: 25%;
@@ -1000,7 +1117,7 @@ p.copyright {
 
 /*-----------------------start-----/min-width:650px/----------------------------*/
 @media (min-width: 650px) {
-  .accordionMui {
+  .accordionStyling {
     width: 160%;
     left: -4%;
   }
@@ -1014,13 +1131,16 @@ p.copyright {
     /* width: 4074;
   height: 4317; */
   }
+  .what-is-saliyab {
+    height: 1600px;
+  }
 }
 /*-------------------end---------/min-width:650px/----------------------------*/
 
 /*----------------------------/ start min-width:700px/----------------------------*/
 
 @media (min-width: 700px) {
-  .accordionMui {
+  .accordionStyling {
     width: 160%;
     left: -1%;
   }
@@ -1041,9 +1161,28 @@ p.copyright {
     width: auto;
     margin-top: -150%;
   }
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 75%;
+    left: -5%;
+  }
 }
+
+@media (min-width: 724px) {
+  .what-is-saliyab {
+    height: 1500px;
+  }
+}
+
 /*----------------------------/ end min-width:700px/----------------------------*/
 /*----------------------------/ start min-width:740px/----------------------------*/
+
+@media (min-width: 724px) {
+  .carousel-text img.I-2 {
+    top: 28%;
+    width: 400px;
+  }
+}
 
 @media (min-width: 740px) {
   .wrapper {
@@ -1058,11 +1197,80 @@ p.copyright {
 
 /*-------------start---------------min-width:768px----------------------------*/
 @media (min-width: 768px) {
-  .accordionMui {
+  .carousel-text img.saliyab-carousel {
+    width: 410px;
+  }
+  .carousel-text img.I-1 {
+    top: -9%;
+    left: -1px;
+    width: auto;
+    height: 400px;
+    /* margin-top: -50px; */
+  }
+  .carousel-text img.Y-1 {
+    opacity: 0.2;
+    top: -15%;
+    width: 350px;
+    left: 250px;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -22%;
+    width: auto;
+    height: 450px;
+    left: 490px;
+  }
+  .carousel-text img.S-2 {
+    opacity: 0.2;
+    /* left: 1px; */
+    left: 0.5%;
+    top: 38%;
+    width: 300px;
+    height: 300px;
+  }
+  .carousel-text img.I-2 {
+    top: 24%;
+    width: 400px;
+    /* left: 180px; */
+    left: 20%;
+  }
+
+  .carousel-text img.B-2 {
+    opacity: 0.2;
+    top: 23%;
+    width: 200px;
+    /* left: 570px; */
+    left: 74%;
+  }
+
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    /* left: 630px; */
+    left: 82%;
+    width: auto;
+    height: 300px;
+  }
+
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 78%;
+    width: auto;
+    height: 300px;
+  }
+
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 67%;
+  }
+  .accordionStyling {
     width: 160%;
     left: 1%;
   }
-  #contactInputs {
+  .contactInputs {
     width: 375px;
   }
   .testimonyVector {
@@ -1285,6 +1493,35 @@ p.copyright {
 
 /*------------------end----------/min-width:768px/----------------------------*/
 
+@media (min-width: 811px) {
+  .carousel-text img.S-2 {
+    opacity: 0.2;
+    left: 0.5%;
+    top: 34%;
+    width: 300px;
+    height: 300px;
+  }
+  .carousel-text img.I-2 {
+    top: 20%;
+    width: 400px;
+    left: 20%;
+  }
+
+  .carousel-text img.B-2 {
+    opacity: 0.2;
+    top: 19%;
+    width: 200px;
+    left: 74%;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 70%;
+  }
+}
+
 @media (min-width: 814px) {
   .wrapper {
     position: relative;
@@ -1296,10 +1533,53 @@ p.copyright {
   .v-4-2 {
     height: 280px;
   }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -22.5%;
+    width: auto;
+    height: 450px;
+    left: 66.6%;
+  }
+
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 84%;
+    width: auto;
+    height: 300px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 71.6%;
+  }
 }
 
 /*------------------start----------min-width:900px----------------------------*/
 @media (min-width: 900px) {
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -23.4%;
+    width: auto;
+    height: 450px;
+    left: 69%;
+  }
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 84%;
+    width: auto;
+    height: 300px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 71.6%;
+  }
   .v-4-2 {
     height: 350px;
   }
@@ -1307,14 +1587,14 @@ p.copyright {
     position: relative;
     margin-bottom: 300px;
   }
-  .accordionMui {
+  .accordionStyling {
     width: 160%;
     left: 3%;
   }
   .orWord {
     display: inline;
   }
-  #contactInputs {
+  .contactInputs {
     width: 480px;
   }
   .right-arrow {
@@ -1390,9 +1670,54 @@ p.copyright {
 }
 /*------------------------end----/min-width:900px/----------------------------*/
 
+@media (min-width: 950px) {
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -24.2%;
+    width: auto;
+    height: 450px;
+    left: 71%;
+  }
+  .carousel-text img.Y-1 {
+    opacity: 0.2;
+    top: -15%;
+    width: auto;
+    height: 350px;
+    left: 25%;
+  }
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 86%;
+    width: auto;
+    height: 300px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 73%;
+  }
+}
+
 /*------------------start----------min-width:1024px----------------------------*/
 @media (min-width: 1024px) {
-  .accordionMui {
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 74.5%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -25%;
+    width: auto;
+    height: 450px;
+    left: 73%;
+  }
+  .accordionStyling {
     width: 150%;
     left: 5%;
   }
@@ -1461,9 +1786,33 @@ p.copyright {
 }
 /*----------------end------------/min-width:1024px/----------------------------*/
 
+@media (min-width: 1080px) {
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 76%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -26%;
+    width: auto;
+    height: 450px;
+    left: 74%;
+  }
+}
+
 /*----------------start------------/min-width:1120px/----------------------------*/
 @media (min-width: 1120px) {
-  .accordionMui {
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -26.5%;
+    width: auto;
+    height: 450px;
+    left: 75%;
+  }
+  .accordionStyling {
     width: 150%;
     left: 1%;
   }
@@ -1478,24 +1827,52 @@ p.copyright {
     left: 15%;
     height: 608px;
   }
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 88%;
+    width: auto;
+    height: 300px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 78%;
+  }
 }
 /*------------------end------------/min-width:1120px/----------------------------*/
 
 /*----------------start------------/min-width:1170px/----------------------------*/
 @media (min-width: 1170px) {
-  .accordionMui {
+  .accordionStyling {
     width: 140%;
     left: 3%;
   }
-  #contactInputs {
+  .contactInputs {
     width: 700px;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -27%;
+    width: auto;
+    height: 450px;
+    left: 76%;
   }
 }
 /*------------------end------------/min-width:1170px/----------------------------*/
 
 /*------------start----------------min-width:1200px----------------------------*/
 @media (min-width: 1200px) {
-  .accordionMui {
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -27.5%;
+    width: auto;
+    height: 450px;
+    left: 77%;
+  }
+  .accordionStyling {
     width: 130%;
     left: 3%;
   }
@@ -1543,9 +1920,90 @@ p.copyright {
 }
 /*----------------end------------/min-width:1200px/----------------------------*/
 
+@media (min-width: 1300px) {
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 80%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -29%;
+    width: auto;
+    height: 450px;
+    left: 78.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 90%;
+    width: auto;
+    height: 300px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 82%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -30.5%;
+    width: auto;
+    height: 450px;
+    left: 80.5%;
+  }
+}
+
 /*----------------start------------min-width:1440px----------------------------*/
 @media (min-width: 1440px) {
-  .accordionMui {
+  .what-is-saliyab {
+    height: 1600px;
+  }
+  .carousel-text img.saliyab-carousel {
+    width: 410px;
+  }
+  .carousel-text img.Y-1 {
+    opacity: 0.2;
+    top: -18%;
+    width: auto;
+    height: 450px;
+    left: 28%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -32.5%;
+    width: auto;
+    height: 650px;
+    left: 72%;
+  }
+  .carousel-text img.B-2 {
+    opacity: 0.2;
+    top: 24%;
+    width: auto;
+    height: 400px;
+    left: 65%;
+  }
+  .carousel-text img.I-2 {
+    top: 20%;
+    width: auto;
+    height: 500px;
+    left: 20%;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 83%;
+  }
+  .accordionStyling {
     width: 160%;
     left: 1%;
   }
@@ -1692,9 +2150,98 @@ p.copyright {
 }
 /*------------------end----------/min-width:1440px/----------------------------*/
 
+@media (min-width: 1550px) {
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -34%;
+    width: auto;
+    height: 650px;
+    left: 74%;
+  }
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 55%;
+    left: 92%;
+    width: auto;
+    height: 300px;
+  }
+
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 76%;
+    width: auto;
+    height: 450px;
+    left: 85%;
+  }
+}
+
 /*---------------start-------------min-width:1800px----------------------------*/
 @media (min-width: 1800px) {
-  .accordionMui {
+  .what-is-saliyab {
+    height: 1750px;
+  }
+  .carousel-text img.I-1 {
+    top: -9%;
+    left: -1px;
+    width: auto;
+    height: 550px;
+  }
+  .carousel-text img.Y-1 {
+    opacity: 0.2;
+    top: -22%;
+    width: auto;
+    height: 555px;
+    left: 29.5%;
+  }
+  .carousel-text img.L-1 {
+    opacity: 0.2;
+    top: -41%;
+    width: auto;
+    height: 980px;
+    left: 68%;
+  }
+  .carousel-text img.B-2 {
+    opacity: 0.2;
+    top: 21%;
+    width: auto;
+    height: 450px;
+    left: 63%;
+  }
+  .carousel-text img.S-2 {
+    opacity: 0.2;
+    left: 0.5%;
+    top: 34%;
+    width: auto;
+    height: 500px;
+  }
+  .carousel-text img.I-2 {
+    top: 15%;
+    width: auto;
+    height: 600px;
+    left: 26%;
+  }
+  .carousel-text img.L-3 {
+    opacity: 0.2;
+    top: 45.5%;
+    left: 85%;
+    width: auto;
+    height: 500px;
+  }
+  .carousel-text img.P-4 {
+    opacity: 0.2;
+    top: 70%;
+    width: auto;
+    height: 750px;
+    left: 76%;
+  }
+  .carousel-text img.Y-4 {
+    opacity: 0.2;
+    top: 73%;
+    width: auto;
+    height: 500px;
+    left: 5%;
+  }
+  .accordionStyling {
     width: 120%;
     left: 1%;
   }
@@ -1733,14 +2280,6 @@ p.copyright {
     margin-bottom: 300px;
     width: 500px;
   }
-  /* .y {
-    bottom: -130px;
-    right: -90px;
-    width: 375px;
-    transform: rotate(5deg);
-    z-index: 5;
-    height: 200px;
-  } */
 }
 /*-------------end---------------/min-width:1800px/----------------------------*/
 

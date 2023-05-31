@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Navbar from "../components/NavBar";
@@ -14,7 +15,10 @@ import bShape from "../resources/Shape Elements/b.webp";
 import gShape from "../resources/Shape Elements/g.webp";
 import y2Shape from "../resources/Shape Elements/y2.webp";
 import vShape from "../resources/Shape Elements/v.webp";
+
 import mugnaLogo from "../resources/Logo/mugna_logo.webp";
+import SearchIcon from "@mui/icons-material/Search";
+
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Accordion from "../components/Accordion";
@@ -25,8 +29,25 @@ import Link from "next/link";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import CustomAccordion from "../components/CustomAccordion";
+import { accordionData } from "../Constants/Accordion_Data/accordionData.js";
+
+import I1Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/I-1.webp";
+import Y1Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/Y-1.webp";
+import L1Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/L-1.webp";
+
+import I2Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/I-2.webp";
+import S2Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/S-2.webp";
+import B2Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/B-2.webp";
+
+import L3Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/L-3.webp";
+
+import Y4Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/Y-4.webp";
+import P4Shape from "../resources/Shape Elements/WhatIsSaliyabShapes/P-4.webp";
 
 export default function Home() {
+  const [search, setSearch] = useState("");
+
   return (
     <div>
       <Navbar />
@@ -90,6 +111,64 @@ export default function Home() {
             height="1296"
             alt="saliyab pic"
           />
+
+          {/* -----start-------What is Saliyab Shapes IMAGES */}
+
+          <Image
+            className="I-1 shape"
+            src={I1Shape}
+            alt="what is saliyab shape pic"
+          />
+          <Image
+            className="Y-1 shape"
+            src={Y1Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="L-1 shape"
+            src={L1Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="S-2 shape"
+            src={S2Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="I-2 shape"
+            src={I2Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="B-2 shape"
+            src={B2Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="L-3 shape"
+            src={L3Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="Y-4 shape"
+            src={Y4Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          <Image
+            className="P-4 shape"
+            src={P4Shape}
+            alt="what is saliyab shape pic"
+          />
+
+          {/* -----end-------What is Saliyab Shapes IMAGES */}
+
           <div className="saliyab-text-block text-block">
             <h2>What is Saliyab?</h2>
             <p>
@@ -111,23 +190,6 @@ export default function Home() {
           {/* <Carousel /> */}
 
           <MuiCarousel />
-
-          {/* <Image
-            className="testimonyVector"
-            src={testimoniesVector}
-            alt="pic"
-            // style={{
-            //   // top: 1185,
-            //   top: "70%",
-            //   display: "block",
-            //   marginLeft: "auto",
-            //   marginRight: "auto",
-            //   zIndex: "99999999999999",
-            //   position: "absolute",
-            //   // left: "780px",
-            //   left: "38%",
-            // }}
-          /> */}
         </div>
       </div>
       <div className="contact">
@@ -164,7 +226,28 @@ export default function Home() {
           <div className="faq-search">
             <p>Have questions? We&apos;re here to help.</p>
 
-            <Accordion />
+            <div className="wrapper">
+              <div className="icon">
+                <SearchIcon />
+              </div>
+              <input
+                onChange={(e) => setSearch(e.target.value)}
+                type="text"
+                src="SearchIcon"
+                placeholder="Search"
+                style={{ borderColor: "#384558" }}
+              />
+            </div>
+
+            {accordionData
+              .filter((item) => {
+                return search.toLowerCase() === ""
+                  ? item
+                  : item.sectionTitle.toLowerCase().includes(search);
+              })
+              .map((d: any) => (
+                <CustomAccordion key={d.id} data={d} />
+              ))}
           </div>
           <Image
             className="v-4-2"
@@ -277,8 +360,7 @@ export default function Home() {
                 style={{ textDecoration: "none", color: "white" }}
                 target="_blank"
               >
-                <FacebookIcon />
-                Facebook&emsp;
+                &mdash; Facebook&emsp;
               </Link>
             </Button>
 
@@ -288,8 +370,7 @@ export default function Home() {
                 style={{ textDecoration: "none", color: "white" }}
                 target="_blank"
               >
-                <InstagramIcon />
-                Instagram&emsp;
+                &mdash; Instagram&emsp;
               </Link>
             </Button>
 
@@ -299,8 +380,7 @@ export default function Home() {
                 style={{ textDecoration: "none", color: "white" }}
                 target="_blank"
               >
-                <LinkedInIcon />
-                LinkedIn&emsp;
+                &mdash;LinkedIn&emsp;
               </Link>
             </Button>
           </p>
