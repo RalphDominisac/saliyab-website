@@ -21,7 +21,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-import Accordion from "../components/Accordion";
+// import Accordion from "../components/Accordion";
 import ContactFormSpree from "../components/ContactForm";
 import MuiCarousel from "../components/MuiCarousel";
 import "./globals.css";
