@@ -16,6 +16,11 @@
   margin-bottom: 80px;
 }
 
+.accordionDivider {
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
 .testimonyVector {
   top: 78%;
   display: block;
@@ -412,6 +417,7 @@ img.v-3 {
   background-repeat: no-repeat;
   position: relative;
   color: #384558;
+  background-color: #f2f2f2;
   padding: 30px;
   /* width: 103%; */
 }
@@ -446,7 +452,7 @@ img.v-3 {
   grid-area: header;
 }
 .faq-content p {
-  font-size: 16px;
+  font-size: 13px;
   margin: 0;
 }
 .faq-content h5 {
@@ -481,15 +487,6 @@ img.v-3 {
   margin: 40px auto;
   margin-left: 0;
 }
-/* .v-4-2 {
-  grid-area: image;
-  height: auto;
-  width: 150px;
-  margin: 0 auto;
-  object-fit: cover;
-  width: 4074;
-  height: 4317;
-} */
 
 .v-4-2 {
   grid-area: image;
@@ -500,11 +497,14 @@ img.v-3 {
   /* width: 4074;
   height: 4317; */
 }
-
-@media (min-width: 650px) {
-  .v-4-2 {
-    width: 350px;
-  }
+.v-5-2 {
+  grid-area: image;
+  height: 350px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  /* width: 4074;
+  height: 4317; */
 }
 
 .footer {
@@ -684,6 +684,12 @@ p.copyright {
   }
 }
 
+@media (min-width: 650px) {
+  .contactInputs {
+    width: 550px;
+  }
+}
+
 @media (min-width: 700px) {
   .contactInputs {
     width: 660px;
@@ -743,6 +749,28 @@ p.copyright {
 
 /*----------------start------------min-width:320px----------------------------*/
 @media (min-width: 320px) {
+  .faq-search input {
+    width: 60%;
+  }
+  .accordionDivider {
+    width: 95%;
+  }
+  .sectionTitleAccordion {
+    font-size: 13px;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 290px;
+  }
+
+  .v-4-2 {
+    height: 0px;
+  }
+  .v-5-2 {
+    height: 200px;
+    margin-left: -180px;
+  }
   .what-is-saliyab {
     height: 2050px;
   }
@@ -786,7 +814,7 @@ p.copyright {
     opacity: 0;
   }
   .accordionStyling {
-    width: 145%;
+    width: 100%;
     left: -20%;
   }
   .testimonyVector {
@@ -918,13 +946,16 @@ p.copyright {
     font-size: 20px;
   }
   .faq-content h4 {
-    font-size: 30px;
+    font-size: 19px;
   }
   .faq-content h2 {
-    font-size: 19px;
+    font-size: 30px;
   }
   .faq-content h6 {
     font-size: 16px;
+  }
+  .faq-content {
+    margin-left: -35px;
   }
   /* .v-5 {
     position: relative;
@@ -950,12 +981,6 @@ p.copyright {
   /* .v-4-2 {
     width: 90px;
   } */
-  .v-4-2 {
-    height: 80px;
-    /* width: 999999999px; */
-    /* width: 4074;
-  height: 4317; */
-  }
 }
 /*-------------------end---------/min-width:320px/----------------------------*/
 
@@ -969,9 +994,7 @@ p.copyright {
 
 @media (min-width: 370px) {
   .v-4-2 {
-    height: 80px;
-    /* width: 4074;
-  height: 4317; */
+    height: 0px;
   }
   .carousel-text img.Y-4 {
     opacity: 0.2;
@@ -981,10 +1004,24 @@ p.copyright {
   .what-is-saliyab {
     height: 1900px;
   }
+  .faq-content {
+    margin-left: -25px;
+  }
 }
 
 /*-----------------------start-----/min-width:404px/----------------------------*/
 @media (min-width: 404px) {
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 290px;
+  }
+  .faq-content {
+    margin-left: -15px;
+  }
+  .accordionDivider {
+    width: 95%;
+  }
   .testimonyVector {
     top: 65%;
     left: 12%;
@@ -999,13 +1036,11 @@ p.copyright {
   }
 
   .accordionStyling {
-    width: 160%;
+    width: 100%;
     left: -17%;
   }
   .v-4-2 {
-    height: 90px;
-    /* width: 4074;
-  height: 4317; */
+    height: 0px;
   }
   .carousel-text img.Y-4 {
     opacity: 0.2;
@@ -1017,6 +1052,15 @@ p.copyright {
 
 /*-----------------------start-----/min-width:420px/----------------------------*/
 @media (min-width: 420px) {
+  .v-5-2 {
+    margin-top: -10px;
+  }
+
+  .accordionStyling {
+    width: 100%;
+    left: -17%;
+  }
+
   .carousel-text img {
     width: 245px;
   }
@@ -1030,7 +1074,7 @@ p.copyright {
     padding-top: 25%;
   }
   .v-4-2 {
-    height: 100px;
+    height: 0px;
     /* width: 4074;
   height: 4317; */
   }
@@ -1044,12 +1088,34 @@ p.copyright {
   }
 }
 /*-------------------end---------/min-width:420px/----------------------------*/
+@media (min-width: 480px) {
+  .accordionStyling {
+    width: 100%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 380px;
+  }
+  .accordionDivider {
+    width: 95%;
+  }
+}
 
 /*-----------------------start-----/min-width:500px/----------------------------*/
 @media (min-width: 500px) {
   .accordionStyling {
-    width: 160%;
+    width: 110%;
     left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 380px;
+  }
+  .accordionDivider {
+    width: 105%;
   }
   .what-is-saliyab {
     height: 1700px;
@@ -1115,22 +1181,64 @@ p.copyright {
 }
 /*----------------------------/ end min-width:600px/----------------------------*/
 
+@media (min-width: 640px) {
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 485px;
+  }
+  .accordionDivider {
+    width: 107.5%;
+  }
+  .v-5-2 {
+    margin-top: -130px;
+    margin-left: -380px;
+    height: 330px;
+  }
+  .faq-search input {
+    margin-bottom: 50px;
+  }
+  .icon {
+    margin-top: -5%;
+  }
+  .faq-search input {
+    width: 45%;
+  }
+  .faq-content h4 {
+    font-size: 20px;
+  }
+  .faq-content h2 {
+    font-size: 40px;
+  }
+  .faq-content p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
 /*-----------------------start-----/min-width:650px/----------------------------*/
 @media (min-width: 650px) {
   .accordionStyling {
-    width: 160%;
-    left: -4%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 485px;
+  }
+  .accordionDivider {
+    width: 107.5%;
   }
   .wrapper {
     position: relative;
     margin-bottom: 170px;
   }
-  .v-4-2 {
-    height: 200px;
-    /* width: 999999999px; */
-    /* width: 4074;
-  height: 4317; */
-  }
+
   .what-is-saliyab {
     height: 1600px;
   }
@@ -1141,8 +1249,16 @@ p.copyright {
 
 @media (min-width: 700px) {
   .accordionStyling {
-    width: 160%;
-    left: -1%;
+    width: 115%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 510px;
+  }
+  .accordionDivider {
+    width: 112%;
   }
   .muiCarousel {
     width: 80%;
@@ -1168,6 +1284,15 @@ p.copyright {
   }
 }
 
+@media (min-width: 723px) {
+  .faq-content h4 {
+    font-size: 22px;
+  }
+  .faq-content h2 {
+    font-size: 42px;
+  }
+}
+
 @media (min-width: 724px) {
   .what-is-saliyab {
     height: 1500px;
@@ -1189,14 +1314,54 @@ p.copyright {
     position: relative;
     margin-bottom: 200px;
   }
-  .v-4-2 {
-    height: 250px;
+}
+
+@media (min-width: 753px) {
+  .faq-content h4 {
+    font-size: 24px;
+  }
+  .faq-content h2 {
+    font-size: 44px;
   }
 }
 /*----------------------------/ end min-width:740px/----------------------------*/
 
 /*-------------start---------------min-width:768px----------------------------*/
 @media (min-width: 768px) {
+  .faq {
+    background-image: url("../resources/Shape Elements/vector BG-desaturated.webp");
+    /* background-position: 50% 50%; */
+    background-size: 100%;
+    /* background-size: cover; */
+  }
+  .icon {
+    margin-top: -6%;
+  }
+  .wrapper {
+    position: relative;
+    margin-bottom: -25px;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 380px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
+  .v-4-2 {
+    height: 420px;
+    margin-left: -10px;
+    margin-top: 20px;
+  }
+
+  .v-5-2 {
+    height: 0px;
+  }
   .carousel-text img.saliyab-carousel {
     width: 410px;
   }
@@ -1266,10 +1431,7 @@ p.copyright {
     height: 450px;
     left: 67%;
   }
-  .accordionStyling {
-    width: 160%;
-    left: 1%;
-  }
+
   .contactInputs {
     width: 375px;
   }
@@ -1494,6 +1656,10 @@ p.copyright {
 /*------------------end----------/min-width:768px/----------------------------*/
 
 @media (min-width: 811px) {
+  .wrapper {
+    position: relative;
+    margin-bottom: -25px;
+  }
   .carousel-text img.S-2 {
     opacity: 0.2;
     left: 0.5%;
@@ -1525,13 +1691,19 @@ p.copyright {
 @media (min-width: 814px) {
   .wrapper {
     position: relative;
-    margin-bottom: 250px;
+    margin-bottom: -25px;
   }
 }
 
 @media (min-width: 830px) {
   .v-4-2 {
-    height: 280px;
+    height: 420px;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+
+  .v-5-2 {
+    height: 0px;
   }
   .carousel-text img.L-1 {
     opacity: 0.2;
@@ -1581,15 +1753,29 @@ p.copyright {
     left: 71.6%;
   }
   .v-4-2 {
-    height: 350px;
+    height: 420px;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+
+  .v-5-2 {
+    height: 0px;
   }
   .wrapper {
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: -25px;
   }
   .accordionStyling {
-    width: 160%;
-    left: 3%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 380px;
+  }
+  .accordionDivider {
+    width: 109%;
   }
   .orWord {
     display: inline;
@@ -1717,9 +1903,25 @@ p.copyright {
     height: 450px;
     left: 73%;
   }
+  .icon {
+    margin-top: -4.5%;
+  }
+  .v-4-2 {
+    height: 420px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
   .accordionStyling {
-    width: 150%;
-    left: 5%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 550px;
+  }
+  .accordionDivider {
+    width: 109%;
   }
   .testimonyVector {
     top: 65%;
@@ -1813,8 +2015,16 @@ p.copyright {
     left: 75%;
   }
   .accordionStyling {
-    width: 150%;
-    left: 1%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 550px;
+  }
+  .accordionDivider {
+    width: 109%;
   }
   .testimonyVector {
     top: 65%;
@@ -1847,8 +2057,16 @@ p.copyright {
 /*----------------start------------/min-width:1170px/----------------------------*/
 @media (min-width: 1170px) {
   .accordionStyling {
-    width: 140%;
-    left: 3%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 550px;
+  }
+  .accordionDivider {
+    width: 109%;
   }
   .contactInputs {
     width: 700px;
@@ -1872,9 +2090,20 @@ p.copyright {
     height: 450px;
     left: 77%;
   }
+  .icon {
+    margin-top: -3.8%;
+  }
   .accordionStyling {
-    width: 130%;
-    left: 3%;
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 670px;
+  }
+  .accordionDivider {
+    width: 109%;
   }
   .testimonyVector {
     top: 65%;
@@ -1935,9 +2164,50 @@ p.copyright {
     height: 450px;
     left: 78.5%;
   }
+  .icon {
+    margin-top: -3.2%;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 750px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
 }
 
 @media (min-width: 1400px) {
+  .v-4-2 {
+    height: 420px;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-top: -3%;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 850px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
+  .testimonyVector {
+    top: 65%;
+    left: 34%;
+    width: auto;
+    height: 300px;
+  }
   .carousel-text img.L-3 {
     opacity: 0.2;
     top: 55%;
@@ -1963,6 +2233,26 @@ p.copyright {
 
 /*----------------start------------min-width:1440px----------------------------*/
 @media (min-width: 1440px) {
+  .v-4-2 {
+    height: 420px;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-top: -2.7%;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 950px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
   .what-is-saliyab {
     height: 1600px;
   }
@@ -2003,10 +2293,7 @@ p.copyright {
     height: 450px;
     left: 83%;
   }
-  .accordionStyling {
-    width: 160%;
-    left: 1%;
-  }
+
   .right-arrow {
     height: 130px;
     width: auto;
@@ -2097,9 +2384,9 @@ p.copyright {
   .faq-search input {
     font-size: 15px;
   }
-  .faq-content {
+  /* .faq-content {
     padding: 60px 400px;
-  }
+  } */
   .footer {
     column-gap: 350px;
   }
@@ -2151,6 +2438,26 @@ p.copyright {
 /*------------------end----------/min-width:1440px/----------------------------*/
 
 @media (min-width: 1550px) {
+  .v-4-2 {
+    height: 420px;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-top: -2.5%;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 1050px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
   .carousel-text img.L-1 {
     opacity: 0.2;
     top: -34%;
@@ -2177,6 +2484,26 @@ p.copyright {
 
 /*---------------start-------------min-width:1800px----------------------------*/
 @media (min-width: 1800px) {
+  .v-4-2 {
+    height: 420px;
+    margin-left: 75px;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-top: -2%;
+  }
+  .accordionStyling {
+    width: 110%;
+    left: -11%;
+  }
+  .sectionContentAccordion {
+    font-size: 14px;
+    left: 20px;
+    width: 1250px;
+  }
+  .accordionDivider {
+    width: 109%;
+  }
   .what-is-saliyab {
     height: 1750px;
   }
@@ -2241,10 +2568,7 @@ p.copyright {
     height: 500px;
     left: 5%;
   }
-  .accordionStyling {
-    width: 120%;
-    left: 1%;
-  }
+
   .orWord {
     display: inline;
   }
@@ -2275,11 +2599,11 @@ p.copyright {
   .v {
     left: 33%;
   }
-  .wrapper {
+  /* .wrapper {
     position: relative;
     margin-bottom: 300px;
     width: 500px;
-  }
+  } */
 }
 /*-------------end---------------/min-width:1800px/----------------------------*/
 

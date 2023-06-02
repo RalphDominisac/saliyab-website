@@ -8,6 +8,7 @@ import ourJourney from "../resources/Carousel_Images/Untitled1.webp";
 import whatIsSaliyab from "../resources/Carousel_Images/Saliyab.webp";
 import testimoniesVector from "../resources/Illustrations/vector3.webp";
 import wantToExperience from "../resources/Illustrations/vector5.webp";
+import wantToExperienceVector from "../resources/Illustrations/vector5.webp";
 import faqVector from "../resources/Illustrations/vector4.2.webp";
 import oShape from "../resources/Shape Elements/o.webp";
 import yShape from "../resources/Shape Elements/y.webp";
@@ -21,7 +22,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-import Accordion from "../components/Accordion";
+// import Accordion from "../components/Accordion";
 import ContactFormSpree from "../components/ContactForm";
 import MuiCarousel from "../components/MuiCarousel";
 import "./globals.css";
@@ -192,14 +193,13 @@ export default function Home() {
           <MuiCarousel />
         </div>
       </div>
-      <div className="contact">
+      <div className="contact" id="sendMessage">
         <Image
           className="v-5"
           src={wantToExperience}
           width="2006"
           height="2916"
           alt="pic"
-          id="sendMessage"
         />
         <div className="right-contact">
           <h2>
@@ -249,6 +249,7 @@ export default function Home() {
                 <CustomAccordion key={d.id} data={d} />
               ))}
           </div>
+
           <Image
             className="v-4-2"
             src={faqVector}
@@ -257,13 +258,21 @@ export default function Home() {
             height="4317"
           />
 
+          <Image
+            className="v-5-2"
+            src={wantToExperienceVector}
+            width="2006"
+            height="2916"
+            alt="pic"
+          />
+
           <div className="faq-end">
             <h4>
               <b>Still have questions?</b>
             </h4>
             <h6>
-              Can&apos;t find the answer you&apos;re looking for? Email us at{" "}
-              <span className="y-t">hello@mugna.tech</span>
+              Can&apos;t find the answer you&apos;re looking for? Email us at
+              <span className="y-t"> hello@mugna.tech</span>
             </h6>
           </div>
         </div>

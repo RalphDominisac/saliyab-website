@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Collapse, Box, Divider, IconButton } from "@mui/material";
 import { AddCircle, RemoveCircle } from "@mui/icons-material";
+import "../app/globals.css";
 
 function CustomAccordion(props: any) {
   const { data } = props;
@@ -15,7 +16,9 @@ function CustomAccordion(props: any) {
         alignItems="center"
         className="accordionStyling"
       >
-        <Box sx={{ fontWeight: "bold" }}>{data.sectionTitle}</Box>
+        <Box className="sectionTitleAccordion" sx={{ fontWeight: "bold" }}>
+          {data.sectionTitle}
+        </Box>
         <IconButton
           onClick={() => setIsOpen(!isOpen)}
           sx={{
@@ -31,9 +34,11 @@ function CustomAccordion(props: any) {
         </IconButton>
       </Box>
       <Collapse in={!isOpen} sx={{ textAlign: "left" }}>
-        <Box paddingBottom="24px">{data.sectionContent}</Box>
+        <Box className="sectionContentAccordion" paddingBottom="24px">
+          {data.sectionContent}
+        </Box>
       </Collapse>
-      <Divider />
+      <Divider className="accordionDivider" />
     </>
   );
 }
