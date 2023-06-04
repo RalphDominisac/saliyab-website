@@ -1,12 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import Head from "next/head";
-import Script from "next/script";
 import Navbar from "../components/NavBar";
 import ourJourney from "../resources/Carousel_Images/Untitled1.webp";
 import whatIsSaliyab from "../resources/Carousel_Images/Saliyab.webp";
-import testimoniesVector from "../resources/Illustrations/vector3.webp";
 import wantToExperience from "../resources/Illustrations/vector5.webp";
 import wantToExperienceVector from "../resources/Illustrations/vector5.webp";
 import faqVector from "../resources/Illustrations/vector4.2.webp";
@@ -20,16 +17,12 @@ import vShape from "../resources/Shape Elements/v.webp";
 import mugnaLogo from "../resources/Logo/mugna_logo.webp";
 import SearchIcon from "@mui/icons-material/Search";
 
-import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-// import Accordion from "../components/Accordion";
+
 import ContactFormSpree from "../components/ContactForm";
 import MuiCarousel from "../components/MuiCarousel";
 import "./globals.css";
 import Link from "next/link";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CustomAccordion from "../components/CustomAccordion";
 import { accordionData } from "../Constants/Accordion_Data/accordionData.js";
 
@@ -188,8 +181,6 @@ export default function Home() {
         <div className="testimonials">
           <h2>Testimonies</h2>
 
-          {/* <Carousel /> */}
-
           <MuiCarousel />
         </div>
       </div>
@@ -238,6 +229,8 @@ export default function Home() {
                 style={{ borderColor: "#384558" }}
               />
             </div>
+
+            {/* Searchable Accordion */}
 
             {accordionData
               .filter((item) => {

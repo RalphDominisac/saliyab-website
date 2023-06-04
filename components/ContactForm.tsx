@@ -1,10 +1,6 @@
 import React from "react";
 import "../app/globals.css";
-import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-import { FormControl } from "@mui/material";
-import { useForm, ValidationError } from "@formspree/react";
-import Typography from "@mui/material/Typography";
 import { Input } from "@mui/material";
 import Link from "next/link";
 import { formspreeLink } from "../Constants/Formspree_Link/formspreeLink.js";

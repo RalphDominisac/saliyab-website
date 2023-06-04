@@ -32,7 +32,6 @@ export default function MuiCarousel() {
     <Carousel
       className="muiCarousel"
       navButtonsProps={{
-        // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
           backgroundColor: "rgba(242,242,242,0)",
           borderRadius: 0,
@@ -80,23 +79,7 @@ function Item(props: any) {
       }}
     >
       <q className="testimonyText">{props.item.name}</q>
-      <Image
-        className="testimonyVector"
-        src={testimoniesVector}
-        alt="pic"
-        // style={{
-        //   // top: 1185,
-        //   top: "70%",
-        //   display: "block",
-        //   marginLeft: "auto",
-        //   marginRight: "auto",
-        //   zIndex: "99999999999999",
-        //   position: "absolute",
-        //   // left: "780px",
-        //   left: "38%",
-        // }}
-      />
-      {/* <p className="testimonyQuoter">{props.item.description}</p> */}
+      <Image className="testimonyVector" src={testimoniesVector} alt="pic" />
     </Paper>
   );
 }
