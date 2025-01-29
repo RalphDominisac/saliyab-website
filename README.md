@@ -1,6 +1,5 @@
 # Saliyab Website
 
-![Saliyab Logo](https://saliyab.mugna.tech/logo.png)
 
 Saliyab is a knowledge-sharing platform and workshop series dedicated to technology and innovation. Originally initiated as internal learning sessions within Mugna Technologies, it has evolved into a public resource aimed at fostering technical and creative discussions among individuals of all backgrounds and skill levels.
 
