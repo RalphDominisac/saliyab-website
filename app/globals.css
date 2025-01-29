@@ -1,0 +1,1424 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.MuiButton-root {
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonyText {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #384558;
+}
+
+.testimonyQuoter {
+  color: #384558;
+}
+
+.carousel-quoter {
+  background: rgba(25, 25, 25, 0.7);
+  color: white;
+  text-align: center;
+}
+
+.carousel-quote {
+  background: rgba(25, 25, 25, 0.8);
+  color: white;
+  font-size: 35px;
+}
+
+.saliyab-logo {
+  width: 40%;
+  max-width: 150px;
+  height: auto;
+}
+.saliyab-drawer-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* MUI Carousel CSS */
+.muiCarousel {
+  width: 61%;
+  left: 20%;
+  position: relative;
+}
+
+.muiPaper {
+  height: 530px;
+  background-color: #f2f2f2;
+  border-color: #384558;
+  border: "3px solid #384558";
+  border-radius: 15px;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 8%;
+  position: relative;
+}
+
+.right-arrow {
+  margin-top: -60%;
+  height: 104;
+  color: #f2f2f2;
+  width: 106;
+}
+
+.left-arrow {
+  margin-top: -60%;
+}
+
+/* Burger */
+.burger {
+  height: 10px;
+  width: 20px;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+}
+.patty {
+  position: relative;
+  top: 2px;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+}
+
+.landing {
+  background-image: url("../resources/bg-landing.webp");
+  background-size: cover;
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  color: #f2f2f2;
+}
+
+.textHeader {
+  font-size: 50px;
+  letter-spacing: 21px;
+  padding-top: 180px;
+}
+.lightblue {
+  color: #00bad1;
+}
+.green {
+  color: #83c237;
+}
+.yellow {
+  color: #fdbd00;
+}
+.violet {
+  color: #5816a1;
+}
+.blue {
+  color: #3e82f7;
+}
+.orange {
+  color: #ff582d;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 9px;
+  margin: 0 auto;
+  color: inherit;
+}
+.landing h6 {
+  width: 70%;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-weight: lighter;
+  font-size: 9px;
+  padding: 7px 15px;
+  background: none;
+  color: inherit;
+  border-radius: 15px;
+  border: solid;
+  border-width: thin;
+}
+.sendMessage {
+  margin: 10px 0 300px 0;
+  font-weight: 400;
+}
+
+.text-block {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.journey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #220051;
+  padding: 20px;
+  color: #f2f2f2;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+
+.journey img {
+  margin: 35px auto;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 230px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.journey-text-block {
+  color: #f2f2f2;
+}
+
+.journey-text-block p {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.slant-buffer {
+  background-color: #f2f2f2;
+  position: relative;
+  height: 20vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slant-buffer:after {
+  background-color: #220051;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(-10deg);
+  z-index: 1;
+}
+@media (min-width: 565px) {
+  .slant-buffer:after {
+    transform: skewY(-11.4deg);
+  }
+}
+
+.what-is-saliyab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #384558;
+  background-color: #f2f2f2;
+  background-image: url("../resources/Shape Elements/mobile-what-is-saliyab.webp");
+  background-size: 370px auto;
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-top: 40px;
+  height: 1710px;
+}
+.carousel-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-text img {
+  margin: 0 auto 35px auto;
+  height: auto;
+  width: 300px;
+  object-fit: cover;
+}
+
+.what-is-saliyab p {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.what-is-saliyab h2 {
+  font-weight: bold;
+}
+
+.testimonials {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.textimony {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 15px auto 0 auto;
+  padding: 100px 0;
+  border: solid;
+  border-width: medium;
+  box-shadow: 0 5px 8px rgb(197, 197, 197);
+  border-radius: 15px;
+  gap: 20px;
+}
+.textimony q {
+  text-align: center;
+  font-size: 12px;
+  width: 61%;
+  font-weight: normal;
+}
+.textimony img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 90px;
+  object-fit: contain;
+}
+
+img.v-3 {
+  position: relative;
+  bottom: 60px;
+  margin: -30px;
+  width: 50%;
+  max-width: 450px;
+  height: auto;
+}
+@media (min-width: 360px) {
+  img.v-3 {
+    bottom: 80px;
+  }
+}
+@media (min-width: 425px) {
+  img.v-3 {
+    bottom: 95px;
+  }
+}
+@media (min-width: 480px) {
+  img.v-3 {
+    bottom: 120px;
+  }
+}
+@media (min-width: 580px) {
+  img.v-3 {
+    bottom: 150px;
+  }
+}
+@media (min-width: 690px) {
+  .journey {
+    gap: 50px;
+  }
+  img.v-3 {
+    bottom: 180px;
+  }
+}
+@media (min-width: 830px) {
+  img.v-3 {
+    bottom: 210px;
+  }
+}
+@media (min-width: 900px) {
+  img.v-3 {
+    margin: -50px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #384558;
+  margin: 50px auto 0 auto;
+  padding: 0 30px;
+}
+.v-5 {
+  display: none;
+  object-fit: cover;
+  object-position: right;
+}
+.contact h6 {
+  color: #000000;
+  margin-left: 0;
+}
+
+.lb-t {
+  color: #00e7f5;
+}
+.contact-form {
+  margin-top: 50px;
+}
+.contact-form h5 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.r-t {
+  color: #ff0000;
+}
+.line {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  border-width: thin;
+}
+.faq-line {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: solid;
+  border-width: thin;
+}
+.contact-buttons {
+  margin: 30px auto 60px auto;
+  text-align: center;
+  font-size: 12px;
+  word-spacing: px;
+}
+.contact-buttons button {
+  margin: 0 10px 0 10px;
+  font-size: 13px;
+}
+
+.faq {
+  background-image: url("../resources/Shape Elements/mobile-vector-BG-desaturated.webp");
+  background-repeat: no-repeat;
+  position: relative;
+  color: #384558;
+  padding: 30px;
+}
+.faq-content {
+  padding: 40px;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "header header"
+    "search image"
+    "dd dd"
+    "end end";
+}
+@media (min-width: 650px) {
+  .faq-content {
+    grid-template-areas:
+      "title title"
+      "header header"
+      "search image"
+      "dd image"
+      "end end";
+  }
+}
+.faq-search {
+  margin: 10px auto 50px auto;
+  margin-left: 0;
+}
+.faq-content h4 {
+  grid-area: title;
+}
+.faq-content h2 {
+  grid-area: header;
+}
+.faq-content p {
+  font-size: 16px;
+  margin: 0;
+}
+.faq-content h5 {
+  font-size: 16px;
+  margin: 0;
+}
+.faq-search {
+  grid-area: search;
+}
+.faq-search input {
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 15px;
+  border-width: thin;
+}
+.faq-dd {
+  grid-area: dd;
+}
+.faq-dd h6 {
+  margin-top: 15px;
+}
+.y-t {
+  color: rgb(255, 166, 0);
+}
+.faq-end {
+  grid-area: end;
+  margin: 40px auto;
+  margin-left: 0;
+}
+.v-4-2 {
+  grid-area: image;
+  height: auto;
+  width: 150px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+@media (min-width: 650px) {
+  .v-4-2 {
+    width: 350px;
+  }
+}
+
+.footer {
+  position: relative;
+  color: #f2f2f2;
+  background-color: #220051;
+  text-align: center;
+  padding: 40px 40px 15px 40px;
+  overflow: hidden;
+}
+.footer * {
+  z-index: 3;
+}
+.shape {
+  position: absolute;
+  width: 100%;
+  height: auto;
+<<<<<<< Updated upstream:app/globals.css
+  z-index: 2;
+=======
+  z-index: 2
+>>>>>>> Stashed changes:css/styles.css
+}
+.o {
+  width: 199px;
+  bottom: -130px;
+  left: -40px;
+  transform: rotate(15deg);
+  z-index: 5;
+}
+.y {
+  width: 149px;
+  top: 0;
+  bottom: unset;
+  right: -30px;
+  transform: rotate(20deg);
+  z-index: 5;
+}
+.anti-overflow {
+  position: absolute;
+  bottom: -135px;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.b {
+  width: 144.49px;
+  height: 142px;
+  top: 190px;
+  left: -35px;
+}
+.g {
+  width: 151px;
+  height: 155.42px;
+  top: 230px;
+  right: -55px;
+}
+.y2 {
+  width: 150px;
+  height: 150px;
+  top: 435px;
+  left: -80px;
+  transform: rotate(10deg);
+}
+.v {
+  width: 137.32px;
+  height: 86.62px;
+  top: 470px;
+  transform: rotate(-80deg);
+  right: -55px;
+}
+.spiel img {
+  width: 132px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.address h3,
+.inquiries h3 {
+  margin: 20px auto;
+}
+.footer p {
+  font-size: 16px;
+  width: 85%;
+  margin: 0 auto 20px auto;
+}
+.spiel {
+  grid-area: spiel;
+  margin: 0 auto 50px auto;
+  max-width: 315px;
+}
+.spiel p {
+  margin-top: 10px;
+}
+.inquiries {
+  grid-area: inq;
+  margin-bottom: 50px;
+}
+.links p {
+  margin: 0;
+  width: 100%;
+  min-width: 315px;
+}
+.address {
+  grid-area: address;
+  max-width: 320px;
+  margin: 0 auto 50px auto;
+}
+
+td {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.links {
+  margin-top: 40px;
+  grid-area: links;
+}
+
+p.copyright {
+  grid-area: copyright;
+  margin-top: 50px;
+  min-width: 307px;
+}
+
+/*=======================
+  ==== MEDIA QUERIES ===========================================================================================
+  =======================*/
+
+<<<<<<< Updated upstream:app/globals.css
+/*----------------start------------min-width:320px----------------------------*/
+@media (min-width: 320px) {
+  .right-arrow {
+    height: 70px;
+    width: auto;
+    /* margin-left: 200px; */
+  }
+  .muiCarousel {
+    width: 95%;
+    left: 2%;
+  }
+  .what-is-saliyab {
+    height: 2080px;
+  }
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+  .testimonials h2 {
+    font-size: 50px;
+  }
+  .saliyab-text-block p {
+    order: 1;
+    font-size: 20px;
+  }
+  .saliyab-text-block h2 {
+    order: 1;
+    font-size: 30px;
+  }
+  .journey p {
+    font-size: 20px;
+  }
+  .journey h2 {
+    font-size: 40px;
+  }
+  .textHeader {
+    letter-spacing: 10px;
+    margin-left: 20px;
+  }
+
+  .lightblue,
+  .green,
+  .yellow,
+  .violet,
+  .blue,
+  .orange {
+    font-size: 70px;
+  }
+  .sendMessage {
+    font-size: 15px;
+  }
+=======
+/*----------------------------min-width:600px----------------------------*/
+@media (min-width: 600px) {
+>>>>>>> Stashed changes:css/styles.css
+  .shape {
+    position: absolute;
+    height: auto;
+    width: 250px;
+  }
+  .o {
+    bottom: -160px;
+    left: -50px;
+    transform: rotate(15deg);
+    z-index: 5;
+<<<<<<< Updated upstream:app/globals.css
+    height: 110px;
+    left: -65px;
+=======
+>>>>>>> Stashed changes:css/styles.css
+  }
+  .y {
+    bottom: -130px;
+    right: -50px;
+    transform: rotate(20deg);
+    z-index: 5;
+<<<<<<< Updated upstream:app/globals.css
+    top: 70px;
+    height: 140px;
+=======
+>>>>>>> Stashed changes:css/styles.css
+  }
+  .anti-overflow {
+    bottom: -90px;
+  }
+  .b {
+    height: 246.53px;
+<<<<<<< Updated upstream:app/globals.css
+    top: 180px;
+=======
+    top: 130px;
+>>>>>>> Stashed changes:css/styles.css
+    left: -60px;
+  }
+  .g {
+    height: 256.62px;
+    top: 165px;
+    right: -90px;
+  }
+  .y2 {
+    height: 250px;
+    top: 410px;
+    left: -130px;
+    transform: rotate(5deg);
+  }
+  .v {
+    height: 156.93px;
+    top: 430px;
+    transform: rotate(-80deg);
+    right: -110px;
+  }
+<<<<<<< Updated upstream:app/globals.css
+  .carousel-quote {
+    font-size: 13px;
+    margin-top: -140px;
+  }
+
+  .right-contact h2 {
+    font-size: 30px;
+  }
+  .right-contact h5 {
+    font-size: 20px;
+  }
+  .faq-content h4 {
+    font-size: 30px;
+  }
+  .faq-content h2 {
+    font-size: 19px;
+  }
+  .faq-content h6 {
+    font-size: 16px;
+  }
+  .v-5 {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    height: 300px;
+    width: 300px;
+    flex-shrink: 5;
+    left: -55px;
+  }
+
+  /* center saliyab logo on mobile - doesn't work for some reason */
+  .saliyab-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mugnaLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*-------------------end---------/min-width:320px/----------------------------*/
+
+/*-------------start---------------min-width:768px----------------------------*/
+=======
+}
+/*----------------------------/min-width:600px/----------------------------*/
+
+/*----------------------------min-width:768px----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
+@media (min-width: 768px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+  /* nav {
+    padding: 10px 80px;
+  }
+  nav p {
+    font-size: 15px;
+    display: inline;
+  } */
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .burger {
+    display: none;
+  }
+  .textHeader {
+    padding-top: 100px;
+  }
+  .lightblue,
+  .green,
+  .yellow,
+  .violet,
+  .blue,
+  .orange {
+    font-size: 80px;
+  }
+
+  .landing h6 {
+    width: 30%;
+    /* font-size: 10px; */
+    font-size: 18px;
+  }
+  .sendMessage {
+    margin-top: 10px;
+    font-size: 9px;
+    margin: 10px 0 200px 0;
+  }
+  .journey {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 50px;
+  }
+  .journey img {
+    margin: 35px 0 35px auto;
+    max-width: 300px;
+    height: 400px;
+  }
+  .journey-text-block {
+    width: 50%;
+  }
+  .journey p {
+    font-size: 20px;
+  }
+  .what-is-saliyab {
+    padding: 20px 30px;
+  }
+  .carousel-text {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .saliyab-text-block p {
+    order: 1;
+    font-size: 20px;
+  }
+  .carousel-text img {
+    order: 2;
+    width: 600px;
+    height: 350px;
+    margin: 35px 0 35px 0;
+    object-position: 100% 50%;
+  }
+
+  .testimonials h2 {
+    font-size: 40px;
+  }
+  .textimony {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .textimony q {
+    font-size: 17px;
+    padding: 40px 0;
+  }
+  .contact {
+    flex-direction: row;
+  }
+  .contact h2 {
+    font-size: 32px;
+  }
+  .v-5 {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    height: 600px;
+    width: 300px;
+    flex-shrink: 5;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  .faq-content h4 {
+    font-size: 25px;
+  }
+  .faq-content h2 {
+    font-size: 35px;
+  }
+  .faq-search h6 {
+    font-size: 15px;
+  }
+  .faq-search input {
+    font-size: 15px;
+  }
+  .faq h2 {
+    font-size: 32px;
+  }
+  .footer {
+    text-align: left;
+    display: grid;
+    grid-auto-columns: minmax(10px, auto);
+    padding: 80px 70px 40px 70px;
+    column-gap: 160px;
+    grid-template-areas:
+      "spiel inq"
+      "spiel address"
+      "copyright links";
+  }
+  .shape {
+    position: absolute;
+    height: auto;
+    width: 250px;
+  }
+  .o {
+    bottom: -180px;
+    left: -75px;
+    transform: rotate(0deg);
+    z-index: 5;
+<<<<<<< Updated upstream:app/globals.css
+    height: 200px;
+=======
+>>>>>>> Stashed changes:css/styles.css
+  }
+  .y {
+    bottom: -130px;
+    right: -50px;
+    transform: rotate(5deg);
+    z-index: 5;
+<<<<<<< Updated upstream:app/globals.css
+    height: 140px;
+=======
+>>>>>>> Stashed changes:css/styles.css
+  }
+  .b {
+    top: 50px;
+    left: 35%;
+  }
+  .g {
+    top: 245px;
+    right: -90px;
+  }
+  .y2 {
+    top: 300px;
+    left: -100px;
+    transform: rotate(-40deg);
+  }
+  .v {
+    top: unset;
+    bottom: -130px;
+    transform: rotate(15deg);
+    right: unset;
+    left: 30%;
+  }
+  .spiel {
+    margin: 0 0 50px auto;
+  }
+  .spiel img {
+    width: 196px;
+  }
+  .footer p {
+    width: unset;
+  }
+  .links {
+    margin-top: 80px;
+  }
+  .links p {
+    margin: 0;
+    font-size: 14px;
+  }
+  @media (min-width: 800px) {
+    .links p {
+      font-size: 16px;
+    }
+  }
+  .inquiries h3 {
+    margin-top: 0;
+  }
+  .spiel p {
+    margin-top: 12px;
+  }
+  p.copyright {
+    margin: 80px 0 0 auto;
+  }
+  .address {
+    margin: unset;
+    margin-top: 50px;
+<<<<<<< Updated upstream:app/globals.css
+  }
+  .carousel-quote {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  /* center saliyab logo on mobile - doesn't work for some reason */
+  .saliyab-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+=======
+>>>>>>> Stashed changes:css/styles.css
+  }
+}
+
+<<<<<<< Updated upstream:app/globals.css
+/*------------------end----------/min-width:768px/----------------------------*/
+
+/*------------------start----------min-width:900px----------------------------*/
+=======
+/*----------------------------min-width:900px----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
+@media (min-width: 900px) {
+  .contact h2 {
+    font-size: 52px;
+  }
+  .contact h6 {
+    font-size: 16px;
+  }
+  .v-5 {
+    width: 350px;
+  }
+  .contact {
+    padding: 150px 0 100px 0;
+  }
+  .contact h2 {
+    font-size: 52px;
+  }
+  .contact h6 {
+    font-size: 16px;
+  }
+  .v-5 {
+    height: 700px;
+    width: 350px;
+  }
+  .faq-content h2 {
+    font-size: 52px;
+  }
+  .faq-content h5 {
+    font-size: 16px;
+  }
+  .b {
+    height: 246.53px;
+    top: 50px;
+    left: 35%;
+  }
+  .v {
+    height: 156.93px;
+    bottom: -80px;
+    transform: rotate(15deg);
+    right: unset;
+    left: 35%;
+  }
+<<<<<<< Updated upstream:app/globals.css
+  .carousel-quote {
+    font-size: 28px;
+    margin-top: -310px;
+  }
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+=======
+>>>>>>> Stashed changes:css/styles.css
+}
+/*------------------------end----/min-width:900px/----------------------------*/
+
+<<<<<<< Updated upstream:app/globals.css
+/*------------------start----------min-width:1024px----------------------------*/
+=======
+/*----------------------------min-width:1024px----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
+@media (min-width: 1024px) {
+  .saliyab-title-caption {
+    font-size: 24px;
+  }
+  .textHeader {
+    padding-top: 150px;
+  }
+  .lightblue,
+  .green,
+  .yellow,
+  .violet,
+  .blue,
+  .orange {
+    font-size: 104px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .sendMessage {
+    font-size: 16px;
+    margin-bottom: 300px;
+  }
+  .journey {
+    padding: 20px 100px;
+  }
+  .carousel-text {
+    padding: 20px 30px;
+  }
+  .textimony {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .textimony q {
+    font-size: 1.5em;
+  }
+  .footer {
+    padding: 80px 150px 40px 150px;
+  }
+  @media (min-width: 1080px) {
+    .footer {
+      padding: 80px 200px 40px 200px;
+    }
+  }
+  .b {
+    left: 38%;
+  }
+<<<<<<< Updated upstream:app/globals.css
+  .carousel-quote {
+    font-size: 40px;
+    margin-top: -420px;
+  }
+  .y {
+    bottom: -130px;
+    right: -50px;
+    transform: rotate(5deg);
+    z-index: 5;
+    height: 140px;
+  }
+=======
+>>>>>>> Stashed changes:css/styles.css
+}
+/*----------------end------------/min-width:1024px/----------------------------*/
+
+/*------------start----------------min-width:1200px----------------------------*/
+@media (min-width: 1200px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+  .o {
+    bottom: -335px;
+    left: -145px;
+    width: 476px;
+    transform: rotate(0deg);
+    z-index: 5;
+  }
+  .y {
+    bottom: -130px;
+    right: -90px;
+    width: 375px;
+    transform: rotate(5deg);
+    z-index: 5;
+    height: 200px;
+  }
+  .anti-overflow {
+    bottom: -90px;
+    height: 250px;
+  }
+  .g {
+    width: 376px;
+    height: 385.02px;
+    top: 180px;
+    right: -80px;
+  }
+  .y2 {
+    width: 450px;
+    height: 450px;
+    top: 290px;
+    left: -250px;
+    transform: rotate(0deg);
+  }
+}
+/*----------------end------------/min-width:1200px/----------------------------*/
+
+<<<<<<< Updated upstream:app/globals.css
+/*----------------start------------min-width:1440px----------------------------*/
+=======
+/*----------------------------min-width:1200px----------------------------*/
+@media (min-width: 1200px) {
+  .o {
+    bottom: -335px;
+    left: -145px;
+    width: 476px;
+    transform: rotate(0deg);
+    z-index: 5;
+  }
+  .y {
+    bottom: -130px;
+    right: -90px;
+    width: 375px;
+    transform: rotate(5deg);
+    z-index: 5;
+  }
+  .anti-overflow {
+    bottom: -90px;
+    height: 250px;
+  }
+  .g {
+    width: 376px;
+    height: 385.02px;
+    top: 180px;
+    right: -80px;
+  }
+  .y2 {
+    width: 450px;
+    height: 450px;
+    top: 290px;
+    left: -250px;
+    transform: rotate(0deg);
+  }
+}
+/*----------------------------/min-width:1200px/----------------------------*/
+
+
+/*----------------------------min-width:1440px----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
+@media (min-width: 1440px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+  .textHeader {
+    font-size: 104px;
+  }
+  .landing h6 {
+    width: 25%;
+    font-size: 16px;
+  }
+  .journey {
+    padding: 20px 100px;
+    gap: 50px;
+  }
+  .journey img {
+    margin-top: 50px;
+    max-width: 450px;
+    height: 600px;
+  }
+  .journey h2 {
+    font-size: 64px;
+  }
+  .journey p {
+    font-size: 24px;
+  }
+  .carousel-text {
+    gap: 50px;
+  }
+  .carousel-text img {
+    width: 450px;
+    height: 450px;
+    margin-right: auto;
+  }
+  .what-is-saliyab h2 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .what-is-saliyab p {
+    font-size: 24px;
+  }
+  .saliyab-text-block {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 45px;
+    width: 50%;
+  }
+  .contact-form h5 {
+    font-size: 18px;
+  }
+  .contact-buttons {
+    font-size: 1vw;
+  }
+  .contact-buttons button {
+    font-size: 0.8vw;
+    margin: 0 20px;
+  }
+  .faq-search h6 {
+    font-size: 15px;
+  }
+  .faq-search input {
+    font-size: 15px;
+  }
+  .faq-content {
+    padding: 60px 400px;
+  }
+  .footer {
+    column-gap: 350px;
+  }
+  .b {
+    width: 406px;
+    height: 400px;
+    top: -50px;
+    left: 35%;
+  }
+  .g {
+    width: 376px;
+    height: 385.02px;
+    top: 180px;
+    right: -70px;
+  }
+  .y2 {
+    width: 450px;
+    height: 450px;
+    top: 290px;
+    left: -250px;
+    transform: rotate(0deg);
+  }
+  .v {
+    width: 550px;
+    height: 410.59px;
+    bottom: -250px;
+    transform: rotate(0deg);
+    right: unset;
+    left: 25%;
+  }
+  p.copyright {
+    margin-top: 75px;
+  }
+  .address {
+    margin-top: 20px;
+  }
+<<<<<<< Updated upstream:app/globals.css
+  .y {
+    bottom: -130px;
+    right: -90px;
+    width: 375px;
+    transform: rotate(5deg);
+    z-index: 5;
+    height: 200px;
+  }
+=======
+>>>>>>> Stashed changes:css/styles.css
+}
+/*------------------end----------/min-width:1440px/----------------------------*/
+
+<<<<<<< Updated upstream:app/globals.css
+/*---------------start-------------min-width:1800px----------------------------*/
+=======
+/*----------------------------min-width:1800px----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
+@media (min-width: 1800px) {
+  .saliyab-title-caption {
+    font-size: 18px;
+  }
+  .landing h6 {
+    width: 30%;
+  }
+  .journey {
+    padding: 20px 150px;
+    gap: 50px;
+  }
+  .what-is-saliyab {
+    padding: 20px 150px;
+    gap: 50px;
+  }
+  .textimony q {
+    font-size: 2em;
+  }
+  .footer {
+    column-gap: 400px;
+    padding: 80px 350px 40px 350px;
+  }
+  .b {
+    left: 38%;
+  }
+  .v {
+    left: 33%;
+  }
+<<<<<<< Updated upstream:app/globals.css
+  .y {
+    bottom: -130px;
+    right: -90px;
+    width: 375px;
+    transform: rotate(5deg);
+    z-index: 5;
+    height: 200px;
+  }
+}
+/*-------------end---------------/min-width:1800px/----------------------------*/
+
+/* Accordion CSS */
+#page_container {
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#accordion_search_bar_container {
+  position: relative;
+}
+#accordion_search_bar_container:after {
+  content: "\e003";
+  font-family: Glyphicons Halflings;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#accordion_search_bar_container #accordion_search_bar {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+  outline: 0;
+}
+
+.panel-title a {
+  display: block;
+}
+
+.panel-heading {
+  background: #f4f4f4;
+}
+
+/* Contact form CSS */
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+/* MUI drawer CSS */
+.bottomPush {
+  position: "fixed";
+  margin-top: 100px;
+  text-align: "center";
+  padding-bottom: 10;
+}
+=======
+}
+/*----------------------------/min-width:1800px/----------------------------*/
+>>>>>>> Stashed changes:css/styles.css
