@@ -1,4 +1,6 @@
-![Desktop View 1](https://github.com/user-attachments/assets/915db013-a2b4-44b2-a5ba-9acfa9bbe03c)# Saliyab Website
+## Saliyab Website
+
+![Desktop View 1](https://github.com/user-attachments/assets/915db013-a2b4-44b2-a5ba-9acfa9bbe03c)
 
 
 Saliyab is a knowledge-sharing platform and workshop series dedicated to technology and innovation. Originally initiated as internal learning sessions within Mugna Technologies, it has evolved into a public resource aimed at fostering technical and creative discussions among individuals of all backgrounds and skill levels.
